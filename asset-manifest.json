@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/flowline/static/css/main.07a02063.css",
+    "main.js": "/flowline/static/js/main.16ad1007.js",
+    "static/js/468.4afd3c34.chunk.js": "/flowline/static/js/468.4afd3c34.chunk.js",
+    "static/js/787.e4f25d41.chunk.js": "/flowline/static/js/787.e4f25d41.chunk.js",
+    "static/media/2.PNG": "/flowline/static/media/2.7cc467a0cac9ccc12bbc.PNG",
+    "static/media/11.PNG": "/flowline/static/media/11.3ef753c866c2a4a84097.PNG",
+    "static/media/33.PNG": "/flowline/static/media/33.7c80e4585a88c110840d.PNG",
+    "static/media/22.PNG": "/flowline/static/media/22.b12005826c487014144b.PNG",
+    "static/media/1.PNG": "/flowline/static/media/1.872eacda4a589397b4b7.PNG",
+    "static/media/5.PNG": "/flowline/static/media/5.af55fb6ef47e2f45c937.PNG",
+    "static/media/44.PNG": "/flowline/static/media/44.c4712ef3fe0b0255a943.PNG",
+    "static/media/4.PNG": "/flowline/static/media/4.7f36f0b6b8d75ccaf13e.PNG",
+    "static/media/31.PNG": "/flowline/static/media/31.d6f03d7415344e1ba449.PNG",
+    "static/media/background3.png": "/flowline/static/media/background3.a564a5b43bbf0decc34c.png",
+    "static/media/logo2.png": "/flowline/static/media/logo2.2171d4eabd902b96519a.png",
+    "index.html": "/flowline/index.html",
+    "main.07a02063.css.map": "/flowline/static/css/main.07a02063.css.map",
+    "main.16ad1007.js.map": "/flowline/static/js/main.16ad1007.js.map",
+    "468.4afd3c34.chunk.js.map": "/flowline/static/js/468.4afd3c34.chunk.js.map",
+    "787.e4f25d41.chunk.js.map": "/flowline/static/js/787.e4f25d41.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07a02063.css",
+    "static/js/main.16ad1007.js"
+  ]
+}
