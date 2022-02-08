@@ -19,7 +19,7 @@ const MyCarousal = () => {
             </div>
             <Carousel autoPlay
                 showStatus={false} showIndicators={false} showArrows={false}
-                showThumbs={false} infiniteLoop className={classes.c} interval={5000}>
+                showThumbs={false} infiniteLoop className={classes.c} interval={10000}>
 
                 {imgs.map(({ id, url }, index) => (
                     <img src={url} alt={id} key={index} className={classes.imgs}

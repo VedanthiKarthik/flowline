@@ -22,11 +22,11 @@ const TabComponent = () => {
                 onChange={handleTab}
                 variant="fullWidth"
                 aria-label="full width tabs"
-                indicatorColor="none"
-                sx={{ marginTop: '50px' }}
+                TabIndicatorProps={{ sx: { display: 'none' } }}
+            // sx={{ marginTop: '50px' }}
             >
-                <Tab disableRipple label={`Products`} sx={{ color: 'white !important', fontSize: 24, }} className={` ${selectedTab === 0 ? classes.selectedtab : classes.defaulttab1}`} />
-                <Tab disableRipple label={`Services`} sx={{ color: 'white !important', fontSize: 24, }} className={` ${selectedTab === 1 ? classes.selectedtab : classes.defaulttab2}`} />
+                <Tab disableRipple label={`Products`} sx={{ fontSize: 24, }} className={` ${selectedTab === 0 ? classes.selectedtab : classes.defaulttab1}`} />
+                <Tab disableRipple label={`Services`} sx={{ fontSize: 24, }} className={` ${selectedTab === 1 ? classes.selectedtab : classes.defaulttab2}`} />
             </Tabs>
             {/* <TabPanel index={0} value={selectedTab}><ProductsDetails /></TabPanel>
             <TabPanel index={1} value={selectedTab}><ServiceDetails /></TabPanel> */}

@@ -5,12 +5,12 @@ import ps from '../../images/p&sImg'
 const ServiceDetails = () => {
 
     const classes = prodDetails()
-
+    let i = 0
     return (
         <div className={classes.psWrapper}>
             {ps.map((data, index) => (
                 data.type === 'service' &&
-                <div key={index} className={classes.pWrapper}>
+                <div key={index} className={`${classes.pWrapper}  ${++i % 2 === 1 ? classes.pEven : ''}`}>
                     <div className={classes.dataWrapper}>
                         <div className={classes.pTitle}>{data.title}</div>
                         <ul>
@@ -66,7 +66,7 @@ const ServiceDetails = () => {
                                 </li> : ''}
                         </ul>
                     </div>
-                    <div className={classes.imgWrapper}>
+                    <div className={`${classes.imgWrapper} ${i % 2 === 1 ? classes.evenimg : ''}`}>
                         {/* <div className={classes.imgContainer}> */}
                         <img src={data.url} alt={data.title} className={classes.image} />
                         {/* </div> */}

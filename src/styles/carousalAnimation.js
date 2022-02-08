@@ -3,10 +3,10 @@ import { makeStyles } from '@material-ui/core'
 const carousal = makeStyles(theme => ({
 
     c: {
-        maxWidth: '95vw',
-        borderRadius: 10,
+        maxWidth: '100vw',
+        // borderRadius: 10,
         overflow: 'hidden',
-        boxShadow: 'rgba(0,0,0,1) 0px 10px 40px',
+        // boxShadow: 'rgba(0,0,0,1) 0px 10px 40px',
 
 
     },
@@ -19,10 +19,11 @@ const carousal = makeStyles(theme => ({
         // position: 'absolute',
         objectFit: 'cover',
         width: '100%',
-        height: '60vh',
+        height: '100vh',
         borderRadius: '10px',
-        overflow: 'hidden'
+        overflow: 'hidden',
         // zIndex: -10
+        // opacity: 0.7
     },
     headerTitle: {
         position: 'absolute',
@@ -33,7 +34,9 @@ const carousal = makeStyles(theme => ({
         fontWeight: '400',
         color: 'blue',
         zIndex: 10,
-        background: 'linear-gradient(to bottom left, black 0%, transparent 30%)'
+        background: 'linear-gradient(to bottom left, rgba(0,0,0,0.7) , rgba(0,0,0,0.8))'
+        // background: 'black',
+
     }
 
     // '@keyframes myfirst': {

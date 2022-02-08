@@ -28,16 +28,18 @@ function App() {
   return (
 
     <div className="App">
-      <div className='bgcover'></div>
+      {/* <div className='bgcover'></div> */}
       <CssBaseline />
       <StyledEngineProvider injectFirst>
         <Router>
-          <Nav />
+          {/* <Nav /> */}
           <Switch>
             <Route exact path="/" >
               <Home />
               <Suspense fallback={<div>Loading...</div>}>
+                <Nav />
                 <ProductsAndServices />
+
               </Suspense>
               <About />
             </Route>

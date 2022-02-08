@@ -13,9 +13,9 @@ const Footer = () => {
                     <div><b>Tel : (080) 26780725, 41237150</b></div>
                     <div><b>Email : admin@flowlineblr.com</b></div>
                 </>
-                <><FacebookIcon sx={{ color: 'red' }} />
-                    <InstagramIcon sx={{ color: 'red' }} />
-                    <YouTubeIcon sx={{ color: 'red' }} />
+                <><FacebookIcon sx={{ color: 'white' }} />
+                    <InstagramIcon sx={{ color: 'white' }} />
+                    <YouTubeIcon sx={{ color: 'white' }} />
                 </>
             </footer>
         </div>

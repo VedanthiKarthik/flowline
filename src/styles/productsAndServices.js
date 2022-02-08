@@ -5,54 +5,94 @@ const pAnds = makeStyles(theme => ({
     pAndsWrapper: {
         padding: '0 5px 0px 5px',
         // minHeight: 'calc(100vh - 60px)',
-        backgroundColor: 'transparent',
+        backgroundColor: 'rgb(230,230,230)',
 
     },
     psContainer: {
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'space-evenly',
+        marginBottom: '40px'
     },
     p: {
-        backgroundImage: `url(${pbg})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        flexBasis: '300px',
+        // -backgroundImage: `url(${pbg})`,
+        // -backgroundRepeat: 'no-repeat',
+        // -backgroundSize: 'cover',
+        flexBasis: '280px',
         alignItems: 'center',
+        backgroundColor: 'white',
+        borderRadius: '5px',
+        padding: '8px',
+        outline: '1px solid grey',
         // flex: '1',
         // width: '300px',
-        height: '300px',
+        height: '400px',
         margin: '20px',
-        // overflow: 'hidden',
+        overflow: 'hidden',
         position: 'relative',
         transitionDuration: '300ms !important',
         transition: 'all 300ms ease-out !important',
         '&:hover': {
-            boxShadow: 'rgba(0,0,0,0.77) 0px 3px 25px',
-            transform: 'scale(1.03) !important'
+            boxShadow: 'rgba(0,0,0,0.77) 0px 3px 20px',
+            transform: 'scale(1.01) !important',
+            // outline: '2px solid  rgba(64,0,0,0.8784313725490196)'
         }
     },
     pContainer: {
-        width: '85%',
-        height: '85%',
-        // margin: ' auto auto',
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        backgroundImage: 'linear-gradient(to bottom right, white, black)',
-        opacity: '0.4',
-        backdropFilter: 'blur(10px)',
-        borderRadius: '5px'
-    },
-    imgWrapper: {
-        flex: 4,
-    },
-    pImg: {
         width: '100%',
-        height: '35vh',
-        objectFit: 'cover'
+        height: '100%',
+        outline: '1px solid #db261d',
+
+        '&:hover': {
+            outline: '2px solid #db261d'
+        }
+        // display: 'grid',
+        // backgroundImage: 'linear-gradient(to bottom right, white, black)',
+        // opacity: '0.4',
+        // backdropFilter: 'blur(10px)',
+        // borderRadius: '5px'
     },
+    imageContainer: {
+        width: '100%',
+        height: '35%',
+        backgroundColor: 'blue',
+        objectFit: 'cover',
+        overflow: 'hidden'
+    },
+    image: {
+        width: '100%',
+        height: '100%',
+    },
+    detailsContainer: {
+        height: '65%',
+        padding: '5px',
+        // whiteSpace: 'nowrap',
+        display: 'inline-block',
+        textAlign: 'center',
+        overflow: 'hidden',
+        textOverflow: 'ellipse'
+        // overflow: 'hidden'
+        // backgroundColor: 'red',
+    },
+    title: {
+        // textAlign: 'center',
+
+        padding: '10px 0',
+        fontWeight: 'bold'
+    },
+    description: {
+
+        // height: '100%',
+
+    },
+    // imgWrapper: {
+    //     flex: 4,
+    // },
+    // pImg: {
+    //     width: '100%',
+    //     height: '35vh',
+    //     objectFit: 'cover'
+    // },
     pTitle: {
         cursor: 'pointer',
         position: 'absolute',
@@ -78,26 +118,29 @@ const pAnds = makeStyles(theme => ({
         textAlign: 'center',
         margin: '25px auto 5px auto',
     },
+
     pextra: {
         color: 'wheat',
         // minHeight: '80%',
         justifyContent: 'center',
         alignItems: 'center',
         '&:hover': {
-
             textShadow: '2px 8px 6px rgba(0,0,0,0.6), 0px -5px 35px rgba(255,255,255,1)',
-
         }
     },
+
+
     divider: {
         // border: 0,
         // borderTop: '1px solid white',
-        width: '70%',
+        width: '100%',
         // height: '2px',
-        margin: '65px auto',
+        margin: '0px 0px auto',
         border: 0,
         height: '1px',
-        backgroundImage: 'linear-gradient(left, #f0f0f0, #8c8c8c, #f0f0f0)'
+        // -backgroundImage: 'linear-gradient(left, #f0f0f0, #8c8c8c, #f0f0f0)'
+        backgroundImage: 'linear-gradient(left, #f0f0f0, black, #f0f0f0)'
+
     },
     // arrowWrappper: {
     //     position: 'relative',
@@ -118,9 +161,9 @@ const pAnds = makeStyles(theme => ({
     },
     round: {
         position: 'relative',
-        border: '3px solid #fff',
-        width: '80px',
-        height: '80px',
+        border: '3px solid #000',
+        width: '70px',
+        height: '70px',
         borderRadius: '100%',
     },
 
@@ -128,8 +171,8 @@ const pAnds = makeStyles(theme => ({
         zIndex: '999',
         height: '3px',
         margin: '1px',
-        width: '30px',
-        background: '#fff',
+        width: '28px',
+        background: '#000',
         transition: '0.4s ease'
     },
 
@@ -137,7 +180,7 @@ const pAnds = makeStyles(theme => ({
         display: ' block',
         position: 'absolute',
         transform: 'rotate(45deg)',
-        top: '33%',
+        top: '32%',
         // animation: 'mymove 5s infinite ease-in alternate'
         animation: `$move 500ms ${theme.transitions.easing.easeInOut} infinite alternate`,
 
@@ -147,7 +190,7 @@ const pAnds = makeStyles(theme => ({
         display: 'block',
         position: 'absolute',
         transform: 'rotate(-45deg)',
-        bottom: ' 33%',
+        bottom: ' 32%',
         // animation: 'mymove 5s infinite ease-in alternate'
         animation: `$move 500ms ${theme.transitions.easing.easeInOut} infinite alternate`,
     },

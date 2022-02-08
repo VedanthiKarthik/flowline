@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     homeWrapper: {
-        paddingTop: 60,
+        // paddingTop: 60,
         // height: 'calc(100vh - 50px)',
         height: '100%',
         backgroundColor: 'transpatent'
@@ -16,27 +16,30 @@ const useStyles = makeStyles((theme) => ({
     },
     desc: {
         zIndex: 5,
-        position: 'absolute',
-        top: '60%',
+        // -position: 'absolute',
+        // -top: '60%',
         textAlign: 'center',
         // color: 'white',
-        color: 'rgba(255,255,255,0.6)',
-        textShadow: '1px 1px 2px red',
-        backgroundImage: 'linear-gradient(to bottom right, #101012 30%, #1d1d21,#1e1e21)',
+        color: 'black',
+        fontSize: '14px',
+        zIndex: 999,
+        // textShadow: '1px 1px 2px red',
+        // backgroundImage: 'linear-gradient(to bottom right, #101012 30%, #1d1d21,#1e1e21)',
         borderRadius: 5,
         padding: 8,
         width: '80%',
-        backdropFilter: 'blur(15px)',
+        // backdropFilter: 'blur(15px)',
         // color: 'black',
         // textShadow: '-0.4px 0 white, 0 0.4px white, 0.4px 0 white, 0 -0.4px grey',
         margin: '30px',
-        outline: '#fd6565c7 solid 1px',
-        boxShadow: 'rgba(0,0,0,1) 0px 10px 25px',
+        // outline: '#fd6565c7 solid 1px',
+        // boxShadow: 'rgba(0,0,0,1) 0px 10px 25px',
 
     },
     desc2: {
         textAlign: 'center',
-        fontSize: '26px',
+        // position: 'absolute',
+        fontSize: '35px',
         padding: 4,
         animation: `$slide 8000ms ${theme.transitions.easing.easeInOut} infinite alternate`,
 
@@ -62,16 +65,21 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center'
     },
     descWrapper1: {
-        marginTop: 90,
-        marginBottom: 10,
-        height: '40px',
-        overflow: 'hidden',
-        border: '2px solid #510f0f',
-        width: '60%',
-        backgroundColor: '#883e3e',
-        borderRadius: '8px',
+        position: "absolute",
+        // marginTop: 90,
+        // marginBottom: 10,
+        color: 'white',
+        left: '15%',
+        top: '40%',
+        zIndex: 999,
+        // height: '60px',
+        // overflow: 'hidden',
+        // border: '2px solid #510f0f',
+        // width: '70%',
+        // backgroundColor: '#883e3e',
+        // borderRadius: '8px',
         // boxShadow: 'inset 0px 0px 30px 0px rgba(255 255 255 /10)'
-        boxShadow: 'inset 0px 0px 30px 0px rgba(0 0 0 /60)'
+        // boxShadow: 'inset 0px 0px 30px 0px rgba(0 0 0 /60)'
 
         // backgroundColor: 'grey',
         // display: 'flex',

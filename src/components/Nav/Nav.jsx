@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
 import Contact from '../Contact/Contact';
 import { Dialog, DialogTitle } from '@material-ui/core';
 
-import Logo from '../../images/logo2.png'
+import Logo from '../../images/logo1.png'
 
 const pages = [
     {
@@ -56,8 +56,9 @@ const Nav = () => {
     return (
         <AppBar className={classes.appbar}>
             <Toolbar variant="dense" className={classes.toolBar}>
-                <div className={classes.imgWrapper}>
+                <div className={classes.logoWrapper}>
                     <img src={Logo} alt='' className={classes.logo} />
+                    <h2>FLOWLINE</h2>
                 </div>
                 <Box sx={{ display: { xs: 'flex' } }}>
                     {pages.map((page, index) => (

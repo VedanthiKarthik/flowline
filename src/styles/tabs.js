@@ -3,9 +3,11 @@ import { makeStyles } from "@material-ui/core";
 
 const tabStyles = makeStyles((theme) => ({
     tabWrapper: {
-        marginTop: '60px 0'
+        // marginTop: '60px'
+        backgroundColor: 'rgb(230,230,230)'
     },
     selectedtab: {
+        color: '#400000e0 !important',
         // backgroundImage: 'linear-gradient(to right, grey, black)',
         backgroundColor: 'transparent !important '
     },
@@ -14,11 +16,14 @@ const tabStyles = makeStyles((theme) => ({
     },
     defaulttab1: {
         backgroundColor: '#400000e0',
-        borderRadius: '0px 0px 15px 0px'
+        borderRadius: '0px 0px 15px 0px',
+        color: 'white !important'
     },
     defaulttab2: {
         backgroundColor: '#400000e0',
-        borderRadius: '0px 0px 0px 15px'
+        borderRadius: '0px 0px 0px 15px',
+        color: 'white !important'
+
     }
 }))
 

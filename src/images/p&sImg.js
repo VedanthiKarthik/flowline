@@ -20,6 +20,24 @@ const pNsImg = [
         'ROPlant': 'Our cabinet RO design ensures that the quality of water is as good as packaged drinking water, while also ensuring that the system is safe from unauthorized operation. The RO plant is enclosed on all 6 sides, compact and is available both in MS and SS. UV Option available.'
     },
     {
+        'type': 'service',
+        'description': `Flowline vertically expanded in 2012 to add air into its portfolio. We have associated ourselves with industry leaders “Kaeser Compressors India Pvt Ltd” subsidiary of Kaeser Kompressoren GmbH for their interests in Karnataka. We are the authorized dealers for Kaeser undertaking their Sales and Services in Karnataka.\n 
+                        Flowline Engineers is also equipped to carry out PPCH piping and Aluminum piping for compressed air distribution. \n We have close to 350 installations in our operational area in companies like Honda (Automotive), Toyota Boshoku (Automotive), TAFE (Automotive), Vishwas Textile (Textiles), Triveni Turbines
+                        Power), Sutures India (Pharma), Rexam Pharma (Pharma), MSPL (Steel), Minera (Steel), Badve
+                        Engineering (Engineering), AT India (Engineering) etc.  `,
+        'title': 'COMPRESSORS AND COMPRESSED AIR DISTRIBUTION',
+        'url': RO
+    },
+    {
+        'type': 'service',
+        'title': 'EFFLUENT RECYCLE AND ZERO LIQUID DISCHARGE',
+        'description': `Treated waste water from STP and ETP can be used back into the process after proper tertiary treatment.
+                        This will ensure reduction in usage of ground water, savings due to reuse of water etc., \n
+                        We can design the system to discharge ZERO LIQUID out of the factory. Clear, low TDS water can be
+                        used for boiler, process etc.`,
+        'url': EL
+    },
+    {
         'type': 'product',
         'title': 'INDUSTRIAL WATER TREATMENT',
         'DMMBPlants': 'Demineralization plants are available in MS and FRP. These plants ensure production of ultra pure water for process where quality of water is critical. ',
@@ -49,24 +67,8 @@ const pNsImg = [
     //     'title': 'EFFLUENT RECYCLE AND ZERO LIQUID DISCHARGE',      ',
     //     'url': OM
     // },    
-    {
-        'type': 'service',
-        'description': `Flowline vertically expanded in 2012 to add air into its portfolio. We have associated ourselves with industry leaders “Kaeser Compressors India Pvt Ltd” subsidiary of Kaeser Kompressoren GmbH for their interests in Karnataka. We are the authorized dealers for Kaeser undertaking their Sales and Services in Karnataka.\n 
-                        Flowline Engineers is also equipped to carry out PPCH piping and Aluminum piping for compressed air distribution. \n We have close to 350 installations in our operational area in companies like Honda (Automotive), Toyota Boshoku (Automotive), TAFE (Automotive), Vishwas Textile (Textiles), Triveni Turbines
-                        Power), Sutures India (Pharma), Rexam Pharma (Pharma), MSPL (Steel), Minera (Steel), Badve
-                        Engineering (Engineering), AT India (Engineering) etc.  `,
-        'title': 'COMPRESSORS AND COMPRESSED AIR DISTRIBUTION',
-        'url': RO
-    },
-    {
-        'type': 'service',
-        'title': 'EFFLUENT RECYCLE AND ZERO LIQUID DISCHARGE',
-        'description': `Treated waste water from STP and ETP can be used back into the process after proper tertiary treatment.
-                        This will ensure reduction in usage of ground water, savings due to reuse of water etc., \n
-                        We can design the system to discharge ZERO LIQUID out of the factory. Clear, low TDS water can be
-                        used for boiler, process etc.`,
-        'url': EL
-    },
+
+
     //  {
     //     'title': 'OPERATIONS AND MAINTENANCE OF UTILITIES',
     //     'url': OM

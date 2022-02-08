@@ -3,6 +3,7 @@ import React from 'react'
 import useStyles from '../../styles/homeStyle'
 import MyCarousal from './Carousal'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import TyperText from './TyperText';
 const Home = () => {
 
     const classes = useStyles()
@@ -20,12 +21,13 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className={classes.descWrapper}>
-                <div className={classes.descWrapper1}>
+            <div className={classes.descWrapper1}>
+                <TyperText />
+                {/* <div className={classes.descWrapper1}>
                     <div className={classes.desc2}><i>'A ONE STOP SHOP FOR ALL YOUR UTILITY NEEDS'</i></div>
                     <div className={classes.desc2}><b>VISION -</b><i> INDUSTRY LEADERS IN UTILITY MANAGEMENT</i></div>
                     <div className={classes.desc2}><b>MISSION -</b><i> EXCELLENCE THROUGH CUSTOMER FOCUS</i></div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

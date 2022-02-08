@@ -10,7 +10,8 @@ const ProductsDetails = () => {
         <div className={classes.psWrapper}>
             {ps.map((data, index) => (
                 data.type === 'product' &&
-                <div key={index} className={classes.pWrapper}>
+                <div key={index} className={`${classes.pWrapper} ${index % 2 == 1 ? classes.pEven : ''}`}>
+                    {console.log(index)}
                     <div className={classes.dataWrapper}>
                         <div className={classes.pTitle}>{data.title}</div>
                         <ul>
@@ -66,9 +67,9 @@ const ProductsDetails = () => {
                                 </li> : ''}
                         </ul>
                     </div>
-                    <div className={classes.imgWrapper}>
+                    <div className={`${classes.imgWrapper} ${index % 2 === 1 ? classes.evenimg : ''}`}>
                         {/* <div className={classes.imgContainer}> */}
-                        <img src={data.url} alt={data.title} className={classes.image} />
+                        <img src={data.url} alt={data.title} className={`${classes.image} `} />
                         {/* </div> */}
                     </div>
                 </div>

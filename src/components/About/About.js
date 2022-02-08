@@ -2,6 +2,7 @@ import { Box, Card, CardMedia, Grid, Typography } from '@material-ui/core'
 import React from 'react'
 import aboutStyles from '../../styles/aboutStyles'
 import clientLogos from '../../images/clientLogo'
+import wave from '../../images/wave.png'
 
 const About = () => {
     console.log(clientLogos.map(({ name, url }, index) => url))
@@ -9,6 +10,7 @@ const About = () => {
 
     return (
         <div id='about' className={classes.aboutWrapper}>
+            <img src={wave} alt='wave' className={classes.wave} />
             <h1 className={classes.typoHeader}>
                 Clients
             </h1>

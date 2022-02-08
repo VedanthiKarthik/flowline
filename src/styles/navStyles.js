@@ -3,26 +3,31 @@ import { makeStyles } from "@material-ui/core";
 
 const navStyles = makeStyles({
     appbar: {
-        backgroundImage: 'linear-gradient(to bottom, rgba(64,0,0,0.5), black)',
-
-
+        // backgroundImage: 'linear-gradient(to bottom, rgba(64,0,0,0.5), black)',
+        backgroundColor: 'white',
+        position: 'sticky',
+        top: 0,
+        padding: '6px 0px',
         // minHeight: "50px",
         // maxHeight: "60px"
-        // height: '40px !important',
+        height: '60px !important',
         borderBottom: '1px solid #c74f4f'
 
     },
     toolBar: {
         height: '40px !important',
         // backgroundColor: 'rgba(64,0,0,0.8784313725490196)',
-        backgroundImage: 'linear-gradient(to bottom, rgba(64,0,0,0.5), black)',
-        maxHeight: 50,
-        position: 'relative',
+        // backgroundImage: 'linear-gradient(to bottom, rgba(64,0,0,0.5), black)',
+        // maxHeight: 50,
+        // position: 'relative',
     },
-    imgWrapper: {
+    logoWrapper: {
         display: 'flex',
         flexGrow: 1,
         // marginLeft: '10px',
+        '& h2': {
+            marginLeft: '45px'
+        }
     },
     logo: {
         // background: 'white',
@@ -38,12 +43,12 @@ const navStyles = makeStyles({
         // borderRadius: '0px !important',
         height: '30px !important',
         // backgroundImage: 'linear-gradient(to bottom right, #101012 30%, #1d1d21,#1e1e21) !important',
-        fontWeight: '600',
+        fontWeight: '550',
         color: "#db261d",
         // border: '1px solid white !important'
     },
     navbtnSelect: {
-        color: "white !important",
+        color: "black !important",
         outline: '2px solid #db261d',
         backgroundImage: 'none !important'
     }

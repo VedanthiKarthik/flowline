@@ -3,7 +3,8 @@ import { makeStyles } from "@material-ui/core";
 const aboutStyles = makeStyles(theme => ({
     aboutWrapper: {
         // marginTop: '60px',
-        padding: '0 20px 10px 30px',
+        // padding: '0 20px 10px 30px',
+        position: 'relative',
         // paddingTop: 60,
         // paddingLeft: 20,
         minHeight: 'calc(100vh - 50px)',
@@ -33,24 +34,27 @@ const aboutStyles = makeStyles(theme => ({
     // },
     media: {
         marginTop: '20px',
-        width: '95px',
-        height: '50px',
+        width: '120px',
+        height: '65px',
         objectfit: 'scale-down',
         borderRadius: '5px',
         outline: '0.5px solid white',
         // boxShadow: 'rgba(255, 255, 255, 0.94) 0px 2px 3px',
-        boxShadow: 'rgba(0,0,0,0.77) 0px 3px 25px',
+        // -boxShadow: 'rgba(0,0,0,0.77) 0px 3px 25px',
 
 
         // overflow: 'hidden'
     },
     imgHolder: {
-        borderRadius: '5px',
-        overflow: 'hidden'
+        // -borderRadius: '5px',
+        overflow: 'hidden',
+        marginTop: '10px',
+        borderRight: '1px solid lightgrey'
     },
     branchWrapper: {
         display: 'flex',
         flexWrap: 'wrap',
+        marginBottom:'30px',
         justifyContent: 'space-evenly',
         // flexWrap: 'wrap'
     },
@@ -105,9 +109,16 @@ const aboutStyles = makeStyles(theme => ({
     },
     bottomGrid: {
         display: 'flex',
+        // marginBottom: '30px'
     },
     branches: {
         flex: 1
+    },
+    wave: {
+        position: 'absolute',
+        bottom: 0,
+        width: "100%",
+        opacity: 0.4
     }
 
 }))
