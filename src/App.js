@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 import './App.css';
 import Home from './components/Home/Home';
 import Nav from './components/Nav/Nav';
@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 
 import About from './components/About/About';
-// import ProductsAndServices from './components/ProductAndServices/ProductsAndServices';
+import ProductsAndServices from './components/ProductAndServices/ProductsAndServices';
 import Footer from './components/Footer/Footer';
 import ProductsDetails from './components/PandSDetails/ProductsDetails';
 import ServiceDetails from './components/PandSDetails/ServiceDetails';
@@ -21,7 +21,7 @@ import { StyledEngineProvider } from '@mui/material/styles';
 
 
 // import Contact from './components/Contact/Contact';
-const ProductsAndServices = React.lazy(() => import('./components/ProductAndServices/ProductsAndServices'));
+// const ProductsAndServices = React.lazy(() => import('./components/ProductAndServices/ProductsAndServices'));
 
 
 function App() {
@@ -36,11 +36,8 @@ function App() {
           <Switch>
             <Route exact path="/" >
               <Home />
-              <Suspense fallback={<div>Loading...</div>}>
-                <Nav />
-                <ProductsAndServices />
-
-              </Suspense>
+              <Nav />
+              <ProductsAndServices />
               <About />
             </Route>
             <Route exact path='/products&servies'><TabComponent /></Route>
