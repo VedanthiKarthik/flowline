@@ -7,18 +7,16 @@ const Footer = () => {
 
     const classes = footerStyle()
     return (
-        <div className={classes.footerWrapper}>
-            <footer>
-                <>
-                    <div><b>Tel : (080) 26780725, 41237150</b></div>
-                    <div><b>Email : admin@flowlineblr.com</b></div>
-                </>
-                <><FacebookIcon sx={{ color: 'white' }} />
-                    <InstagramIcon sx={{ color: 'white' }} />
-                    <YouTubeIcon sx={{ color: 'white' }} />
-                </>
-            </footer>
-        </div>
+        <footer className={classes.footerWrapper}>
+            <>
+                <div><b>Tel : (080) 26780725, 41237150</b></div>
+                <div><b>Email : admin@flowlineblr.com</b></div>
+            </>
+            <><FacebookIcon sx={{ color: 'white' }} />
+                <InstagramIcon sx={{ color: 'white' }} />
+                <YouTubeIcon sx={{ color: 'white' }} />
+            </>
+        </footer>
     )
 }
 

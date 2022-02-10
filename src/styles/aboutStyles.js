@@ -7,11 +7,11 @@ const aboutStyles = makeStyles(theme => ({
         position: 'relative',
         // paddingTop: 60,
         // paddingLeft: 20,
-        minHeight: 'calc(100vh - 50px)',
+        // minHeight: 'calc(100vh - 50px)',
         // backgroundColor: 'transparent'
     },
     typoHeader: {
-        marginBottom: 8,
+        marginBottom: 6,
         textShadow: '-1px -1px 3px white',
         fontSize: '3rem',
         // color: 'rgba(255,0,0,0.8)',
@@ -54,18 +54,18 @@ const aboutStyles = makeStyles(theme => ({
     branchWrapper: {
         display: 'flex',
         flexWrap: 'wrap',
-        marginBottom:'30px',
+        marginBottom: '30px',
         justifyContent: 'space-evenly',
         // flexWrap: 'wrap'
     },
     branchHolder: {
         // flexGrow: 1,
-        marginTop: '18px',
+        marginTop: '15px',
         maxWidth: '200px',
         padding: '10px',
         boxShadow: 'rgba(255, 255, 255, 0.94) 0px 0px 6px',
         // boxShadow: 'rgba(0,0,0,0.77) 0px 3px 25px',
-
+        height: '135px',
 
         // backgroundColor: '#0f0f11',
         backgroundImage: 'linear-gradient(to bottom right, #101012 30%, #1d1d21,#1e1e21)',
@@ -80,7 +80,7 @@ const aboutStyles = makeStyles(theme => ({
         // border: '0.5px solid white'
     },
     clientsWrapper: {
-        margin: '5px 0px 100px 0px '
+        margin: '5px 0px 80px 0px '
     },
     edetails: {
         marginTop: '15px',
@@ -89,7 +89,7 @@ const aboutStyles = makeStyles(theme => ({
         // backgroundColor: '#0f0f11',
         boxShadow: 'rgba(255, 255, 255, 0.94) 0px 0px 6px',
 
-
+        height: '135px',
 
         backgroundImage: 'linear-gradient(to bottom right, #101012 30%, #1d1d21,#1e1e21)',
         color: 'white',
@@ -118,7 +118,8 @@ const aboutStyles = makeStyles(theme => ({
         position: 'absolute',
         bottom: 0,
         width: "100%",
-        opacity: 0.4
+        opacity: 0.4,
+        height: '45%'
     }
 
 }))

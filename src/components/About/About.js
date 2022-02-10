@@ -25,7 +25,7 @@ const About = () => {
                     ))}
                 </Grid>
             </div>
-            <Box sx={{ my: 2 }}></Box>
+            {/* <Box sx={{ my: 2 }}></Box> */}
             <div className={classes.bottomGrid}>
                 <div className={classes.branches}>
                     <h1 className={classes.typoHeader}>
