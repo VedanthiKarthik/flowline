@@ -25,7 +25,7 @@ const carousal = makeStyles(theme => ({
     headerTitle: {
         position: 'absolute',
         width: '100%',
-        height: '100%',
+        height: '100vh',
         // paddingLeft: 'auto',
         // paddingTop: 10,
         // fontWeight: '400',

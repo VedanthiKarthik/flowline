@@ -32,8 +32,8 @@ const useStyles = makeStyles((theme) => ({
         position: "absolute",
         color: 'white',
         left: '15%',
-        top: '40%',
-        zIndex: 999,
+        top: '35%',
+        zIndex: 10,
 
     },
     // "@keyframes slide": {
