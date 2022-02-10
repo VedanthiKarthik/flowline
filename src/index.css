@@ -62,3 +62,7 @@ body {
 a{
   text-decoration:none
 }
+
+p{
+  margin: 0.5em;
+}

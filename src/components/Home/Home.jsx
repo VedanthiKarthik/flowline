@@ -10,19 +10,17 @@ const Home = () => {
     return (
         <div id='home' className={classes.homeWrapper}>
             <MyCarousal />
-            <div className={classes.description}>
-                <div className={classes.desc}>
-                    <p className={classes.desc1}><i>{`In today’s fiercely competitive markets; A customer needs instant access to wide ranging business
-                        solutions and also needs support that is fast and close at hand.`}</i>
-                    </p>
-                    <p className={classes.desc1}><i>{`This is what we, as Flowline Engineers
-                        bring to the table. As a local single window solution in utilities and services, we are pioneers of Utility
-                        Management.`}</i>
-                    </p>
-                </div>
-            </div>
             <div className={classes.descWrapper1}>
                 <TyperText />
+            </div>
+            <div className={classes.description}>
+                <p ><i>{`In today’s fiercely competitive markets; A customer needs instant access to wide ranging business
+                        solutions and also needs support that is fast and close at hand.`}</i>
+                </p>
+                <p ><i>{`This is what we, as Flowline Engineers
+                        bring to the table. As a local single window solution in utilities and services, we are pioneers of Utility
+                        Management.`}</i>
+                </p>
             </div>
         </div>
     )

@@ -2,7 +2,7 @@ import { makeStyles } from '@mui/styles'
 
 const footerStyle = makeStyles(theme => ({
     footerWrapper: {
-        heigit: '30px',
+        // heigit: '30px',
         padding: '5px',
         color: 'white',
         width: '100%',
