@@ -2,13 +2,10 @@ import { makeStyles } from '@material-ui/core'
 
 const carousal = makeStyles(theme => ({
 
-    c: {
+    cMain: {
         maxWidth: '100vw',
-        // borderRadius: 10,
+        height: '100vh',
         overflow: 'hidden',
-        // boxShadow: 'rgba(0,0,0,1) 0px 10px 40px',
-
-
     },
     cWrapper: {
         display: 'flex',
@@ -31,8 +28,8 @@ const carousal = makeStyles(theme => ({
         height: '100%',
         // paddingLeft: 'auto',
         // paddingTop: 10,
-        fontWeight: '400',
-        color: 'blue',
+        // fontWeight: '400',
+        // color: 'blue',
         zIndex: 10,
         background: 'linear-gradient(to bottom left, rgba(0,0,0,0.7) , rgba(0,0,0,0.8))'
         // background: 'black',
