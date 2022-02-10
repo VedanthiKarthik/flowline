@@ -2,11 +2,16 @@ import { makeStyles } from "@material-ui/core";
 
 
 const navStyles = makeStyles({
+
+    // navWrapper: {
+    //     position: 'sticky',
+    //     top: '50px',
+    // },
     appbar: {
         // backgroundImage: 'linear-gradient(to bottom, rgba(64,0,0,0.5), black)',
-        backgroundColor: 'white',
+        // backgroundColor: 'white',
         position: 'sticky',
-        top: 0,
+        top: '50px',
         padding: '6px 0px',
         // minHeight: "50px",
         // maxHeight: "60px"
@@ -15,11 +20,7 @@ const navStyles = makeStyles({
 
     },
     toolBar: {
-        height: '40px !important',
-        // backgroundColor: 'rgba(64,0,0,0.8784313725490196)',
-        // backgroundImage: 'linear-gradient(to bottom, rgba(64,0,0,0.5), black)',
-        // maxHeight: 50,
-        // position: 'relative',
+        height: '100%',
     },
     logoWrapper: {
         display: 'flex',

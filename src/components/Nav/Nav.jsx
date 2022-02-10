@@ -54,6 +54,7 @@ const Nav = () => {
     }
 
     return (
+        // <div className={classes.navWrapper}>
         <AppBar className={classes.appbar}>
             <Toolbar variant="dense" className={classes.toolBar}>
                 <div className={classes.logoWrapper}>
@@ -82,6 +83,7 @@ const Nav = () => {
                 <Contact isOpen={dialogisOpen} setDialog={setDialog} />
             </Toolbar>
         </AppBar>
+        // </div>
     )
 }
 
