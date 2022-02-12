@@ -23,12 +23,19 @@ const navStyles = makeStyles({
         // height: '100%',
     },
     logoWrapper: {
+        maxHeight: '100%',
         display: 'flex',
         flexGrow: 1,
         // marginLeft: '10px',
-        '& h2': {
-            marginLeft: '45px'
-        }
+        // '& h2': {
+        //     marginLeft: '45px'
+        // }
+    },
+    companyName: {
+        fontSize: '20px',
+        marginLeft: '45px',
+        fontWeight: 'bold'
+
     },
     logo: {
         // background: 'white',

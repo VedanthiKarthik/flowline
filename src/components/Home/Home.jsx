@@ -10,7 +10,7 @@ const Home = () => {
     const classes = useStyles()
     return (
         <div id='home' className={classes.homeWrapper}>
-            <Nav />
+            {/* <Nav /> */}
             <MyCarousal />
             <div className={classes.descWrapper1}>
                 <TyperText />

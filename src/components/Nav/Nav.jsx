@@ -59,7 +59,7 @@ const Nav = () => {
             <Toolbar variant="dense">
                 <div className={classes.logoWrapper}>
                     <img src={Logo} alt='' className={classes.logo} />
-                    <h2>FLOWLINE</h2>
+                    <div className={classes.companyName}>FLOWLINE</div>
                 </div>
                 <Box sx={{ display: { xs: 'flex' } }}>
                     {pages.map((page, index) => (

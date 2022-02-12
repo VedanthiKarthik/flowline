@@ -15,10 +15,10 @@ import Footer from './components/Footer/Footer';
 import ProductsDetails from './components/PandSDetails/ProductsDetails';
 import ServiceDetails from './components/PandSDetails/ServiceDetails';
 import TabComponent from './components/Tab/Tab';
-import { CssBaseline } from '@material-ui/core';
+// import { CssBaseline } from '@material-ui/core';
 import { StyledEngineProvider } from '@mui/material/styles';
 
-
+// import ScopedCssBaseline from '@mui/material/ScopedCssBaseline';
 
 // import Contact from './components/Contact/Contact';
 // const ProductsAndServices = React.lazy(() => import('./components/ProductAndServices/ProductsAndServices'));
@@ -29,14 +29,13 @@ function App() {
 
     <div className="App">
       {/* <div className='bgcover'></div> */}
-      <CssBaseline />
       <StyledEngineProvider injectFirst>
         <Router>
           {/* <Nav /> */}
           <Switch>
             <Route exact path="/" >
               <Home />
-              {/* <Nav /> */}
+              <Nav />
               <ProductsAndServices />
               <About />
             </Route>
