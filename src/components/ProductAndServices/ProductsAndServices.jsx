@@ -27,7 +27,7 @@ const ProductsAndServices = () => {
                     {/* <div className={classes.arrowWrappper}>
 
                     </div> */}
-                    <Link to='/products&servies'>
+                    <Link to='/products&servies#main'>
                         <div className={classes.center}>
 
                             <div className={classes.round}>
