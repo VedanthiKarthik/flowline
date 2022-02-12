@@ -2,20 +2,20 @@ import React from 'react'
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
+// import IconButton from '@mui/material/IconButton';
+// import Typography from '@mui/material/Typography';
+// import Menu from '@mui/material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
+// import Container from '@mui/material/Container';
+// import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
+// import Tooltip from '@mui/material/Tooltip';
+// import MenuItem from '@mui/material/MenuItem';
 
 import navStyles from '../../styles/navStyles'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Contact from '../Contact/Contact';
-import { Dialog, DialogTitle } from '@material-ui/core';
+// import { Dialog, DialogTitle } from '@material-ui/core';
 
 import Logo from '../../images/logo1.png'
 
@@ -55,8 +55,8 @@ const Nav = () => {
 
     return (
         // <div className={classes.navWrapper}>
-        <AppBar className={classes.appbar}>
-            <Toolbar variant="dense" className={classes.toolBar}>
+        <AppBar position='sticky' className={classes.appbar}>
+            <Toolbar variant="dense">
                 <div className={classes.logoWrapper}>
                     <img src={Logo} alt='' className={classes.logo} />
                     <h2>FLOWLINE</h2>

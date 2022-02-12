@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useLayoutEffect, useState } from 'react'
+import { useHistory } from 'react-router-dom'
 import { Tab, TabPanelUnstyled, Tabs } from '@mui/material'
 import tabStyles from '../../styles/tabs'
 import ProductsDetails from '../PandSDetails/ProductsDetails'
@@ -9,6 +10,37 @@ const TabComponent = () => {
 
     const [selectedTab, setTab] = React.useState(0)
     const classes = tabStyles()
+    useLayoutEffect(() => {
+        window.location.href = '#main'
+
+    }, []);
+
+    const [locationKeys, setLocationKeys] = useState([])
+    const history = useHistory()
+
+    useEffect(() => {
+        return history.listen(location => {
+            if (history.action === 'PUSH') {
+                setLocationKeys([location.key])
+            }
+
+            if (history.action === 'POP') {
+                if (locationKeys[1] === location.key) {
+                    setLocationKeys(([_, ...keys]) => keys)
+                    console.log(location.key)
+                    // Handle forward event
+
+                } else {
+                    setLocationKeys((keys) => [location.key, ...keys])
+
+                    // Handle back event
+
+                }
+            }
+        })
+    }, [locationKeys,])
+
+
 
     const handleTab = (event, tabIndex) => {
         setTab(tabIndex)
@@ -16,7 +48,7 @@ const TabComponent = () => {
     }
 
     return (
-        <div className={classes.tabWrapper}>
+        <div id='main' className={classes.tabWrapper}>
             <Tabs
                 value={selectedTab}
                 onChange={handleTab}

@@ -36,7 +36,7 @@ function App() {
           <Switch>
             <Route exact path="/" >
               <Home />
-              <Nav />
+              {/* <Nav /> */}
               <ProductsAndServices />
               <About />
             </Route>

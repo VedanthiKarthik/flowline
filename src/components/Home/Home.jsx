@@ -4,11 +4,13 @@ import useStyles from '../../styles/homeStyle'
 import MyCarousal from './Carousal'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import TyperText from './TyperText';
+import Nav from '../Nav/Nav';
 const Home = () => {
 
     const classes = useStyles()
     return (
         <div id='home' className={classes.homeWrapper}>
+            <Nav />
             <MyCarousal />
             <div className={classes.descWrapper1}>
                 <TyperText />

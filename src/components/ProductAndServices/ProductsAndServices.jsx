@@ -1,10 +1,10 @@
 import { CardActionArea, CardMedia, CardActions, Typography, CardContent, Card, Grid, Fade, Grow, Divider } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Nav from '../Nav/Nav'
+// import Nav from '../Nav/Nav'
 import pNsImg from '../../images/p&sImg'
 import pAnds from '../../styles/productsAndServices'
-import pbg from '../../images/pbg1.png'
+// import pbg from '../../images/pbg1.png'
 
 const ProductsAndServices = () => {
     const classes = pAnds()
@@ -13,9 +13,6 @@ const ProductsAndServices = () => {
             <hr className={classes.divider} />
             {/* <Nav /> */}
             <Fade in={true} timeout={2000}>
-                {/* <Typography variant='h4' className={classes.typoHeader}>
-                    {`Products & Services`}
-                </Typography> */}
                 <h1 className={classes.typoHeader}>
                     {`Products & Services`}
                 </h1>

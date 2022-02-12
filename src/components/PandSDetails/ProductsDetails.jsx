@@ -6,6 +6,8 @@ const ProductsDetails = () => {
 
     const classes = prodDetails()
 
+
+
     return (
         <div className={classes.psWrapper}>
             {ps.map((data, index) => (

@@ -10,8 +10,8 @@ const navStyles = makeStyles({
     appbar: {
         // backgroundImage: 'linear-gradient(to bottom, rgba(64,0,0,0.5), black)',
         // backgroundColor: 'white',
-        position: 'sticky',
-        top: '50px',
+        // position: 'sticky',
+        // top: 0,
         padding: '6px 0px',
         // minHeight: "50px",
         // maxHeight: "60px"
@@ -20,7 +20,7 @@ const navStyles = makeStyles({
 
     },
     toolBar: {
-        height: '100%',
+        // height: '100%',
     },
     logoWrapper: {
         display: 'flex',

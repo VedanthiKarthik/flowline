@@ -66,7 +66,7 @@ const aboutStyles = makeStyles(theme => ({
         boxShadow: 'rgba(255, 255, 255, 0.94) 0px 0px 6px',
         // boxShadow: 'rgba(0,0,0,0.77) 0px 3px 25px',
         height: '135px',
-
+        fontSize: '16px',
         // backgroundColor: '#0f0f11',
         backgroundImage: 'linear-gradient(to bottom right, #101012 30%, #1d1d21,#1e1e21)',
         color: 'white',
