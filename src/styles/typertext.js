@@ -26,7 +26,7 @@ const typertext = makeStyles(theme => ({
         fontSize: '40px',
         // display: 'inline-block',
         position: 'relative',
-        ' &:after': {
+        '&:after': {
             content: '""',
             margin: 'auto',
             position: 'absolute',
