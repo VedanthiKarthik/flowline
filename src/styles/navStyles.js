@@ -3,18 +3,9 @@ import { makeStyles } from "@material-ui/core";
 
 const navStyles = makeStyles({
 
-    // navWrapper: {
-    //     position: 'sticky',
-    //     top: '50px',
-    // },
+
     appbar: {
-        // backgroundImage: 'linear-gradient(to bottom, rgba(64,0,0,0.5), black)',
-        // backgroundColor: 'white',
-        // position: 'sticky',
-        // top: 0,
         padding: '6px 0px',
-        // minHeight: "50px",
-        // maxHeight: "60px"
         height: '60px !important',
         borderBottom: '1px solid #c74f4f'
 

@@ -76,54 +76,6 @@ const ProductCard = ({ index, data }) => {
                             <div className={classes.description}>
                                 {data.description}
                             </div> : null}
-                        {/* {data.Filters !== undefined ? 
-                                <li >
-                                    {data.Filters}
-                                </li> : null}
-                            {data.Softener !== undefined ?
-                                <li >
-                                    {data.Softener}
-                                </li> : <></>}
-                            {data.ROPlant !== undefined ?
-                                <li >
-                                    {data.ROPlant}
-                                </li> : ''}
-                            {data.DMMBPlants !== undefined ?
-                                <li >
-                                    {data.DMMBPlants}
-                                </li> : ''}
-                            {data.FilterSoftener !== undefined ?
-                                <li >
-                                    {data.FilterSoftener}
-                                </li> : ''}
-                            {data.d0 !== undefined ?
-                                <li >
-                                    {data.d0}
-                                    <ul>
-                                        <li>{data.l1}</li>
-                                        <li>{data.l2}</li>
-                                        <li>{data.l3}</li>
-                                        <li>{data.l4}</li>
-                                    </ul>
-                                </li> : ''}
-                            {/* {data.d1 !== undefined ?
-                                <li className={classes.pdescription}>
-                                    {data.d1}
-                                </li> : ''} 
-                            {data.cdescription !== undefined ?
-                                <li >
-                                    {data.cdescription}
-                                    <ul>
-                                        <li>{data.c1}</li>
-                                        <li>{data.c2}</li>
-                                        <li>{data.c3}</li>
-                                        <li>{data.c4}</li>
-                                        <li>{data.c5}</li>
-                                        <li>{data.c6}</li>
-                                    </ul>
-                                </li> : ''}  */}
-                        {/* </ul> */}
-
                     </div>
                 </div>
             </div>
