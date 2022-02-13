@@ -64,7 +64,7 @@ const pAnds = makeStyles(theme => ({
         height: '100%',
     },
     detailsContainer: {
-        height: '65%',
+        height: '64%',
         padding: '5px',
         // whiteSpace: 'nowrap',
         display: 'inline-block',
@@ -81,9 +81,8 @@ const pAnds = makeStyles(theme => ({
         fontWeight: 'bold'
     },
     description: {
-
-        // height: '100%',
-
+        fontSize: '16px',
+        whiteSpace: 'pre-line'
     },
     // imgWrapper: {
     //     flex: 4,
