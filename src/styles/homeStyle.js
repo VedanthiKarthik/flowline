@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     homeWrapper: {
         height: '100%',
+        maxWidth: '100vw',
         backgroundColor: 'transpatent'
     },
     description: {

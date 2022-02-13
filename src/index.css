@@ -56,7 +56,6 @@ body {
 
 #root {
   height: max-content;
-  max-width: 100vw;
   /* overflow: hidden; */
 }
 
