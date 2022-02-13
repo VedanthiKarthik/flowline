@@ -5,7 +5,8 @@ const useStyles = makeStyles((theme) => ({
     homeWrapper: {
         height: '100%',
         maxWidth: '100vw',
-        backgroundColor: 'transpatent'
+        overflow: 'hidden'
+        // backgroundColor: 'transpatent'
     },
     description: {
         justifyContent: 'center',
