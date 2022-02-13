@@ -15,7 +15,7 @@ import Footer from './components/Footer/Footer';
 import ProductsDetails from './components/PandSDetails/ProductsDetails';
 import ServiceDetails from './components/PandSDetails/ServiceDetails';
 import TabComponent from './components/Tab/Tab';
-// import { CssBaseline } from '@material-ui/core';
+import CssBaseline from '@mui/material/CssBaseline';
 import { StyledEngineProvider } from '@mui/material/styles';
 
 // import ScopedCssBaseline from '@mui/material/ScopedCssBaseline';
@@ -26,10 +26,11 @@ import { StyledEngineProvider } from '@mui/material/styles';
 
 function App() {
   return (
-
     <div className="App">
+
       {/* <div className='bgcover'></div> */}
       <StyledEngineProvider injectFirst>
+        <CssBaseline />
         <Router>
           {/* <Nav /> */}
           <Switch>
