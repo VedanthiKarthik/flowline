@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core";
 const aboutStyles = makeStyles(theme => ({
     aboutWrapper: {
         // marginTop: '60px',
-        // padding: '0 20px 10px 30px',
+        padding: '20px',
         position: 'relative',
         // paddingTop: 60,
         // paddingLeft: 20,
@@ -11,7 +11,8 @@ const aboutStyles = makeStyles(theme => ({
         // backgroundColor: 'transparent'
     },
     typoHeader: {
-        marginBottom: 6,
+        marginTop: 0,
+        marginBottom: "10px",
         textShadow: '-1px -1px 3px white',
         fontSize: '3rem',
         // color: 'rgba(255,0,0,0.8)',
@@ -22,7 +23,7 @@ const aboutStyles = makeStyles(theme => ({
         // fontWeight: 'bold',
         // text-shadow: 2px 2px 3px rgb(123 35 30 / 50%);
         // textShadow: ' 1px 1px white, -1px -1px #000',
-        textAlign: 'center',
+        // textAlign: 'center',
         // textDecoration: 'underline',
         // textDecorationColor: 'grey'
     },
@@ -80,7 +81,8 @@ const aboutStyles = makeStyles(theme => ({
         // border: '0.5px solid white'
     },
     clientsWrapper: {
-        margin: '5px 0px 80px 0px '
+        margin: '5px 0px 0px 0px ',
+        paddingBottom: 30
     },
     edetails: {
         marginTop: '15px',
@@ -120,6 +122,45 @@ const aboutStyles = makeStyles(theme => ({
         width: "100%",
         opacity: 0.4,
         height: '45%'
+    },
+    aBody: {
+        display: 'flex',
+        flexWrap: 'wrap'
+    },
+    aDetailsText: {
+        color: 'grey',
+        fontSize: 14,
+        flex: 3,
+        padding: 5,
+        "& h3": {
+            width: 'fit-content',
+            color: 'black',
+            borderBottom: '1px solid grey'
+        },
+        "& ul": {
+            paddingLeft: 16,
+            margin: "0.6em 0",
+            color: 'red',
+            fontWeight: 'bold',
+            "& li": {
+                "& ::before": {
+                    // content: '"\2022"',
+                    content: '',
+                    color: 'blue',
+                    fontWeight: 'bold',
+                    display: 'inline-block',
+                    width: '1em',
+                    marginLeft: '-1em',
+                }
+            }
+        }
+    },
+    aImgWrapper: {
+        flex: 2,
+        // backgroundColor: 'grey'
+    },
+    aDetails: {
+        marginBottom: 10
     }
 
 }))

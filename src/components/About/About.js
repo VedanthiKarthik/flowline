@@ -3,6 +3,8 @@ import React from 'react'
 import aboutStyles from '../../styles/aboutStyles'
 import clientLogos from '../../images/clientLogo'
 import wave from '../../images/wave.png'
+import aboutUsImg from '../../images/compressors/C4.jpg'
+
 
 const About = () => {
     console.log(clientLogos.map(({ name, url }, index) => url))
@@ -10,11 +12,38 @@ const About = () => {
 
     return (
         <div id='about' className={classes.aboutWrapper}>
-            <img src={wave} alt='wave' className={classes.wave} />
-            <h1 className={classes.typoHeader}>
-                Clients
-            </h1>
-            <div className={classes.clientsWrapper}>
+            {/* <img src={wave} alt='wave' className={classes.wave} /> */}
+
+            <div className={classes.aBody}>
+                <div className={classes.aImgWrapper}>
+                    <img src={aboutUsImg} alt='abtImg' />
+                </div>
+                <div className={classes.aDetailsText}>
+                    <h1 className={classes.typoHeader}>
+                        About Us
+                    </h1>
+                    <div className={classes.aDetails}>
+                        In today’s fiercely competitive markets; a customer needs instant access to wide ranging business solutions and also needs support that is fast and close at hand. This is what we, as Flowline Engineers bring to the table. As a local single window solution in utilities and services, we are pioneers of Utility Management.
+                    </div>
+                    <div className={classes.aDetails}>
+                        Established in 1992, we have evolved over the course of the past few decades to be the brand to be reckoned with when it comes to utilities. The organization can be viewed under 4 verticals.
+                    </div>
+                    <h3>Why Choose Us?</h3>
+                    <ul>
+                        <li>CUSTOMER FOCUS</li>
+                    </ul>
+                    <div>As a utility solution provider, we operate on customer requirement and interests and give the customer the best solution by customizing our products to match the customer’s needs, thus enriching the Customer's business. Customer focus has been the hallmark of Flowline Engineers.</div>
+                    <ul>
+                        <li>CUSTOMER SPECIFIC SOLUTIONS</li>
+                    </ul>
+                    <div>We not only provide solutions based on our products but also provide consultation in Air, Water and Steam Engineering. Working with the customer to provide the best technical expertise, products and inculcating cost savings into this package has been Flowline’s forte since 1992.</div>
+                    <ul>
+                        <li>24/7 - IMPECCABLE SERVICE</li>
+                    </ul>
+                    <div>We offer spares, 24/7 services, Annual Maintenance Contracts, Breakdown support in addition to our sales support. Flowline’s impeccable service record is a matter of pride for the organization. The accords we have got for our service team is priceless, making the team the backbone of the organization.</div>
+                </div>
+            </div>
+            {/*   <div className={classes.clientsWrapper}>
                 <Grid container alignItems="center" justifyContent="space-around" align='center' >
                     {clientLogos.map(({ name, url }, index) => (
                         <Grid item xs={4} md={2} key={index} >
@@ -24,51 +53,8 @@ const About = () => {
                         </Grid>
                     ))}
                 </Grid>
-            </div>
-            {/* <Box sx={{ my: 2 }}></Box> */}
-            <div className={classes.bottomGrid}>
-                <div className={classes.branches}>
-                    <h1 className={classes.typoHeader}>
-                        Branches
-                    </h1>
-                    <div className={classes.branchWrapper}>
-                        <Card className={classes.branchHolder}>
-                            <Typography variant='subtitle1' className={classes.branch}><u>Bangalore</u></Typography>
-                            <Typography variant='body1' className={classes.branchDetails}>147, 18th Main, 7th Cross, BTM 2nd Stage, Bangalore – 560 078</Typography>
-                            <Typography variant='body1' className={classes.branchDetails}>(080) 26780725, 41237150</Typography>
-                            <Typography variant='body1' className={classes.branchDetails}> admin@flowlineblr.com</Typography>
-                        </Card>
-                        <Card className={classes.branchHolder}>
-                            <Typography variant='subtitle1' className={classes.branch}><u>Bangalore</u></Typography>
-                            <Typography variant='body1' className={classes.branchDetails}>147, 18th Main, 7th Cross, BTM 2nd Stage, Bangalore – 560 078</Typography>
-                            <Typography variant='body1' className={classes.branchDetails}>(080) 26780725, 41237150</Typography>
-                            <Typography variant='body1' className={classes.branchDetails}> admin@flowlineblr.com</Typography>
-                        </Card>
-                    </div>
-                </div>
+            </div> */}
 
-
-
-                <div className={classes.branches}>
-                    <h1 className={classes.typoHeader}>
-                        Establishment
-                    </h1>
-                    <div className={classes.branchWrapper}>
-                        <Card className={classes.edetails}>
-                            {/* <Typography variant='subtitle2' className={classes.branch}>Bangalore</Typography> */}
-                            <Typography variant='body1' className={classes.branchDetails}><u><b>Partners</b> </u>   :    D.Dwarkanath, D.Sreesha, Amith Deshmukh, Bharath Deshmukh</Typography>
-                            {/* <Typography variant='body1' className={classes.branchDetails}><u><b>Office Area</b></u> : 2 Offices</Typography> */}
-                            <Typography variant='body1' className={classes.branchDetails}> <u><b>Bangalore Office</b></u> : 2400 Sq. Feet </Typography>
-                            <Typography variant='body1' className={classes.branchDetails}><u><b> Mysore Office</b></u> : 1600 Sq. Feet </Typography>
-                            <Typography variant='body1' className={classes.branchDetails}> <u><b>Factory</b></u> : 2 Nos. </Typography>
-                            {/* <Typography variant='body2' className={classes.branchDetails}> Bangalore Office : 2400 Sq. Feet </Typography> */}
-                            {/* <Typography variant='body2' className={classes.branchDetails}> Bangalore Office : 2400 Sq. Feet </Typography> */}
-
-                        </Card>
-
-                    </div>
-                </div>
-            </div>
         </div>
     )
 }
