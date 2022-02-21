@@ -43,7 +43,7 @@ function App() {
             <Route exact path='/products&servies'><TabComponent /></Route>
             {/* <Route exact path='/services'><ServiceDetails /></Route> */}
           </Switch>
-          <Footer />
+          {/* <Footer /> */}
         </Router>
       </StyledEngineProvider>
     </div >

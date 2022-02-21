@@ -142,17 +142,17 @@ const aboutStyles = makeStyles(theme => ({
             margin: "0.6em 0",
             color: 'red',
             fontWeight: 'bold',
-            "& li": {
-                "& ::before": {
-                    // content: '"\2022"',
-                    content: '',
-                    color: 'blue',
-                    fontWeight: 'bold',
-                    display: 'inline-block',
-                    width: '1em',
-                    marginLeft: '-1em',
-                }
-            }
+            // "& li": {
+            //     "& ::before": {
+            //         // content: '"\2022"',
+            //         content: '',    
+            //         color: 'blue',
+            //         fontWeight: 'bold',
+            //         display: 'inline-block',
+            //         width: '1em',
+            //         marginLeft: '-1em',
+            //     }
+            // }
         }
     },
     aImgWrapper: {
