@@ -14,7 +14,7 @@ const Footer = () => {
         <footer className={classes.footerMain}>
             <div className={classes.detailsWrapper}>
                 <div className={classes.header}>Contact At</div>
-                <div className={`${classes.details} `}>
+                {/* <div className={`${classes.details} `}>
                     <div className={classes.contactIcon}>
                         <PhoneIcon fontSize="small" sx={{ color: 'white' }} />
                     </div>
@@ -40,9 +40,9 @@ const Footer = () => {
                             <div className={classes.addr}>147, 18th Main, 7th Cross, BTM 2nd Stage, 560 078</div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
-            <div className={classes.dimeDetails}>
+            {/* <div className={classes.dimeDetails}>
                 <div className={classes.header}>Our Company</div>
                 <div className={classes.subHeader}>Partners:
                     <span>D.Dwarkanath, D.Sreesha, Amith Deshmukh, Bharath Deshmukh</span>
@@ -64,8 +64,8 @@ const Footer = () => {
                 </div>
                 <div className={classes.followIcon}>
                     <Twitter fontSize="large" sx={{ color: 'white' }} />
-                </div>
-            </div>
+                </div> 
+            </div> */}
         </footer>
     )
 }
