@@ -12,9 +12,9 @@ const Footer = () => {
     const classes = footerStyle()
     return (
         <footer className={classes.footerMain}>
-            <div className={classes.detailsWrapper}>
-                <div className={classes.header}>Contact At</div>
-                {/* <div className={`${classes.details} `}>
+            {/* <div className={classes.detailsWrapper}> */}
+            {/* <div className={classes.header}>Contact At</div> */}
+            {/* <div className={`${classes.details} `}>
                     <div className={classes.contactIcon}>
                         <PhoneIcon fontSize="small" sx={{ color: 'white' }} />
                     </div>
@@ -41,7 +41,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div> */}
-            </div>
+            {/* </div> */}
             {/* <div className={classes.dimeDetails}>
                 <div className={classes.header}>Our Company</div>
                 <div className={classes.subHeader}>Partners:

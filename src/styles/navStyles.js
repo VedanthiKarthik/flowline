@@ -26,7 +26,6 @@ const navStyles = makeStyles({
         fontSize: '20px',
         marginLeft: '45px',
         fontWeight: 'bold'
-
     },
     logo: {
         // background: 'white',
