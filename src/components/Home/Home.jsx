@@ -14,8 +14,7 @@ const Home = () => {
             <MyCarousal />
             <div className={classes.descWrapper1}>
                 <TyperText />
-            </div>
-            <div className={classes.description}>
+            </div>            <div className={classes.description}>
                 <p ><i>{`In today’s fiercely competitive markets; A customer needs instant access to wide ranging business
                         solutions and also needs support that is fast and close at hand.`}</i>
                 </p>

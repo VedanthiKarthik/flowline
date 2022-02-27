@@ -2,23 +2,23 @@ import { makeStyles } from '@mui/styles'
 import footerImg from '../images/footer-background.jpg'
 
 
-const footer = makeStyles(() => ({
-    footerMain: {
-        position: 'relative',
+const footerStyles = makeStyles(() => ({
+    footerWrapper: {
+        // position: 'relative',
         display: "flex",
         flexWrap: 'wrap',
-        height: '350px',
-        backgroundImage: `url(${footerImg})`,
-        backgroundSize: 'cover',
-        "&::before": {
-            content: "''",
-            position: 'absolute',
-            width: '100%',
-            height: 'inherit',
-            backgroundColor: ' rgba(120, 0, 0, 0.5)',
-            left: 0,
-            top: 0,
-        }
+        minHeight: '350px',
+        // backgroundImage: `url(${footerImg})`,
+        // backgroundSize: 'cover',
+        // "&::before": {
+        //     content: "''",
+        //     position: 'absolute',
+        //     width: '100%',
+        //     height: 'inherit',
+        //     backgroundColor: ' rgba(120, 0, 0, 0.5)',
+        //     left: 0,
+        //     top: 0,
+        // }
     },
     detailsWrapper: {
         // backgroundColor: 'red',
@@ -54,6 +54,14 @@ const footer = makeStyles(() => ({
         alignSelf: 'start',
         fontSize: '14px',
         marginLeft: '40px',
+        "& p": {
+            fontSize: '18px',
+            color: 'red',
+            // textDecoration : 'underline',
+            borderBottom: '2px solid red',
+            fontWeight: '300',
+            margin: 0
+        }
     },
     details: {
         display: 'flex',
@@ -84,7 +92,6 @@ const footer = makeStyles(() => ({
     header: {
         fontSize: '18px',
         color: 'red',
-
         // textDecoration : 'underline',
         borderBottom: '2px solid red'
     },
@@ -102,13 +109,13 @@ const footer = makeStyles(() => ({
         backgroundColor: 'red',
         width: '3em',
         height: '3em',
-        justifySelf:'center',
+        justifySelf: 'center',
         boxShadow: '3px 2px 7px 0 rgb(0 0 0 / 90%), -2px -1px 7px 0 rgb(255 255 255 / 60%)',
-        "& :hover":{
-            cursor:'pointer'
+        "& :hover": {
+            cursor: 'pointer'
         }
     }
 
 }))
 
-export default footer
+export default footerStyles

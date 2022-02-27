@@ -6,9 +6,9 @@ body {
   /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Roboto Condensed', sans-serif !important; */
 
-font-family: 'Montserrat', sans-serif !important;
-font-family: 'Oswald', sans-serif !important;
-font-family: 'Roboto Condensed', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-family: 'Oswald', sans-serif !important;
+  font-family: 'Roboto Condensed', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
    /* background-image:linear-gradient(to bottom right,#000000, #141414);*/
@@ -27,6 +27,13 @@ font-family: 'Roboto Condensed', sans-serif !important;
 
    /* animation: gradient 10s ease infinite; */
    /* background-size: 400% 100%; */
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0px;
+}
+p{
+  margin: 0px;
 }
 @keyframes gradient {
 	0% {
@@ -63,6 +70,3 @@ a{
   text-decoration:none
 }
 
-p{
-  margin: 0.5em;
-}

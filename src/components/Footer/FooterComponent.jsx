@@ -1,5 +1,5 @@
 import React from 'react'
-import footerStyle from '../../styles/footer'
+import footerStyles from '../../styles/footerStyling'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
@@ -7,11 +7,11 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import { Twitter } from '@mui/icons-material';
-const Footer = () => {
+const FooterComponent = () => {
 
-    const classes = footerStyle()
+    const classes = footerStyles()
     return (
-        <footer className={classes.footerMain}>
+        <div className={classes.footerWrapper}>
             {/* <div className={classes.detailsWrapper}> */}
             {/* <div className={classes.header}>Contact At</div> */}
             {/* <div className={`${classes.details} `}>
@@ -42,9 +42,9 @@ const Footer = () => {
                     </div>
                 </div> */}
             {/* </div> */}
-            {/* <div className={classes.dimeDetails}>
-                <div className={classes.header}>Our Company</div>
-                <div className={classes.subHeader}>Partners:
+            {/* <div className={classes.dimeDetails}> */}
+            {/* <div className={classes.header}>Our Company</div> */}
+            {/* <div className={classes.subHeader}>Partners:
                     <span>D.Dwarkanath, D.Sreesha, Amith Deshmukh, Bharath Deshmukh</span>
                 </div>
                 <div className={classes.subHeader}>Bangalore Office:
@@ -52,11 +52,11 @@ const Footer = () => {
                 </div>
                 <div className={classes.subHeader}>Mysore Office
                     <span>1600 Sq. Feet</span>
-                </div>
-            </div>
-            <div className={classes.followUs}>
-                <div className={classes.header}>Follow Us</div>
-                <div className={classes.followIcon}>
+                </div>*/}
+            {/* </div> */}
+            {/* <div className={classes.followUs}> */}
+            {/* <p >Follow Us</p> */}
+            {/*  <div className={classes.followIcon}>
                     <InstagramIcon fontSize="large" sx={{ color: 'white' }} />
                 </div>
                 <div className={classes.followIcon}>
@@ -64,10 +64,10 @@ const Footer = () => {
                 </div>
                 <div className={classes.followIcon}>
                     <Twitter fontSize="large" sx={{ color: 'white' }} />
-                </div> 
-            </div> */}
-        </footer>
+                </div> */}
+            {/* </div> */}
+        </div>
     )
 }
 
-export default Footer
+export default FooterComponent

@@ -11,10 +11,11 @@ import {
 
 import About from './components/About/About';
 import ProductsAndServices from './components/ProductAndServices/ProductsAndServices';
-import Footer from './components/Footer/Footer';
+import FooterComponent from './components/Footer/FooterComponent';
 import ProductsDetails from './components/PandSDetails/ProductsDetails';
 import ServiceDetails from './components/PandSDetails/ServiceDetails';
 import TabComponent from './components/Tab/Tab';
+import FinalComponent from './components/FinalComponent/FinalComponent'
 import CssBaseline from '@mui/material/CssBaseline';
 import { StyledEngineProvider } from '@mui/material/styles';
 
@@ -39,12 +40,13 @@ function App() {
               <Nav />
               <ProductsAndServices />
               <About />
+              <FinalComponent />
             </Route>
             <Route exact path='/products&servies'><TabComponent /></Route>
             {/* <Route exact path='/services'><ServiceDetails /></Route> */}
           </Switch>
-          {/* <Footer /> */}
         </Router>
+        {/* <Footer/> */}
       </StyledEngineProvider>
     </div >
   );

@@ -54,7 +54,7 @@ const aboutStyles = makeStyles(theme => ({
     },
     branchWrapper: {
         display: 'flex',
-        flexWrap: 'wrap',
+        flexWrap: 'wrap-reverse;',
         marginBottom: '30px',
         justifyContent: 'space-evenly',
         // flexWrap: 'wrap'
@@ -125,11 +125,12 @@ const aboutStyles = makeStyles(theme => ({
     },
     aBody: {
         display: 'flex',
-        flexWrap: 'wrap'
+        flexWrap: 'wrap-reverse',
     },
     aDetailsText: {
         color: 'grey',
         fontSize: 14,
+        minWidth: '50%',
         flex: 3,
         padding: 5,
         "& h3": {
@@ -140,7 +141,7 @@ const aboutStyles = makeStyles(theme => ({
         "& ul": {
             paddingLeft: 16,
             margin: "0.6em 0",
-            color: 'red',
+            color: '#db261d',
             fontWeight: 'bold',
             // "& li": {
             //     "& ::before": {
@@ -157,6 +158,8 @@ const aboutStyles = makeStyles(theme => ({
     },
     aImgWrapper: {
         flex: 2,
+        display: 'grid',
+        justifyItems: 'center'
         // backgroundColor: 'grey'
     },
     aDetails: {

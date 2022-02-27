@@ -4,6 +4,7 @@ import aboutStyles from '../../styles/aboutStyles'
 import clientLogos from '../../images/clientLogo'
 import wave from '../../images/wave.png'
 import aboutUsImg from '../../images/compressors/C4.jpg'
+import Clients from './Clients'
 
 
 const About = () => {
@@ -17,6 +18,7 @@ const About = () => {
             <div className={classes.aBody}>
                 <div className={classes.aImgWrapper}>
                     <img src={aboutUsImg} alt='abtImg' />
+                    <Clients />
                 </div>
                 <div className={classes.aDetailsText}>
                     <h1 className={classes.typoHeader}>

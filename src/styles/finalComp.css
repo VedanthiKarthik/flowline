@@ -1,0 +1,118 @@
+.foot-wrapper{
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: 3fr 4fr 2fr; */
+    min-height: 350px;
+    background-image: url(../images/footer-background.jpg);
+    background-size: cover;
+}
+.foot-wrapper::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 0, 0, 0.33);
+    left: 0;
+    top: 0;
+}
+
+
+
+.contacts, .company-details, .follow-us{
+    /* display: grid;
+    align-self: start; */
+    padding: 8px 25px;
+    z-index: 5;
+}
+
+.contacts{
+    /* background-color: blue; */
+    flex: 3;
+}
+
+.company-details{
+    /* background-color: red; */
+    flex: 4;
+}
+
+.follow-us{
+    /* background-color: green; */
+    flex: 2;
+    /* display: grid; */
+}
+
+.mail-icon, .tel-icon, .address-icon{
+    background-color: #db261d;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    box-shadow: 4px 2px 7px 0 rgb(0 0 0 / 90%), -3px -2px 7px 0 rgb(255 0 0 / 70%)
+
+    /* flex: 1; */
+}
+
+.tel-text, .address-text, .mail-text{
+    font-size: 14px;
+    color:white;
+    margin-left: 12px;
+    flex: 11;
+}
+
+.contact-mail, .contact-tel, .contact-address{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+h3{
+    color: #db261d;
+    margin: 20px 0px;
+    border-bottom: 1px solid #db261d;
+}
+.address p{
+    color: lightcoral ;
+}
+
+.detail{
+    font-weight: bold;
+    font-size: 14px;
+    color:white;
+    margin-bottom: 35px;
+}
+
+.detail span{
+    margin-left: 5px;
+    font-weight: normal;
+    color: lightcoral;
+}
+
+.follow-us-icon-wrapper{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.follow-us-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #db261d;
+    /* border: 1px solid rgba(10, 10, 10, 0.5); */
+    width: 3em;
+    height: 3em;
+    justify-self: center;
+    box-shadow: 3px 2px 7px 0 rgb(0 0 0/90%), -2px -1px 7px 0 rgb(255, 0, 0);
+
+}
+
+/* h4,p{
+    margin-left: 12px;
+} */
+/* ../images/footer-background.jpg */

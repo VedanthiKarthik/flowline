@@ -1,0 +1,51 @@
+
+
+.client-wrapper{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.client-header-wrapper{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    position: absolute;
+    top:100%;
+    left: 0;
+    background: none;
+    transform-origin: 0 0;
+    /* background-color: red; */
+    width: 200px;
+    text-align: center;
+    background-color: #db261d;
+    border-radius: 10px;
+}
+
+
+.client-header-wrapper h4{
+    /* transform: rotate(-90deg); */
+    color: white;
+    /* position: absolute; */
+    /* top: 60%;
+    left: 0; */
+    font-size: 26px;
+    /* margin-left: 30%; */
+    /* background: none;
+    transform-origin: 0 0; */
+    /* background-color: red; */
+}
+.client-img-wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 10px
+}
+.client-img{
+    width: 70px;
+    height: 42px;
+}
