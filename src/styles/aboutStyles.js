@@ -130,7 +130,7 @@ const aboutStyles = makeStyles(theme => ({
     aDetailsText: {
         color: 'grey',
         fontSize: 14,
-        minWidth: '50%',
+        minWidth: '40%',
         flex: 3,
         padding: 5,
         "& h3": {
