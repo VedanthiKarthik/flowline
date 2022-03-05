@@ -4,6 +4,7 @@ import { Tab, TabPanelUnstyled, Tabs } from '@mui/material'
 import tabStyles from '../../styles/tabs'
 import ProductsDetails from '../PandSDetails/ProductsDetails'
 import ServiceDetails from '../PandSDetails/ServiceDetails'
+import '../../styles/tab.css'
 
 
 const TabComponent = () => {
@@ -48,7 +49,7 @@ const TabComponent = () => {
     }
 
     return (
-        <div id='main' className={classes.tabWrapper}>
+        <div id='main' className='tab-wrapper'>
             <Tabs
                 value={selectedTab}
                 onChange={handleTab}
@@ -57,8 +58,8 @@ const TabComponent = () => {
                 TabIndicatorProps={{ sx: { display: 'none' } }}
             // sx={{ marginTop: '50px' }}
             >
-                <Tab disableRipple label={`Products`} sx={{ fontSize: 24, }} className={` ${selectedTab === 0 ? classes.selectedtab : classes.defaulttab1}`} />
-                <Tab disableRipple label={`Services`} sx={{ fontSize: 24, }} className={` ${selectedTab === 1 ? classes.selectedtab : classes.defaulttab2}`} />
+                <Tab disableRipple label={`Products`} sx={{ fontSize: 24, }} className={` ${selectedTab === 0 ? 'selected-tab' : 'product-tab'}`} />
+                <Tab disableRipple label={`Services`} sx={{ fontSize: 24, }} className={` ${selectedTab === 1 ? 'selected-tab' : 'service-tab'}`} />
             </Tabs>
             {/* <TabPanel index={0} value={selectedTab}><ProductsDetails /></TabPanel>
             <TabPanel index={1} value={selectedTab}><ServiceDetails /></TabPanel> */}
