@@ -1,15 +1,15 @@
 import { makeStyles } from "@material-ui/core";
 
 const aboutStyles = makeStyles(theme => ({
-    aboutWrapper: {
-        // marginTop: '60px',
-        padding: '20px',
-        position: 'relative',
-        // paddingTop: 60,
-        // paddingLeft: 20,
-        // minHeight: 'calc(100vh - 50px)',
-        // backgroundColor: 'transparent'
-    },
+    // aboutWrapper: {
+    //     // marginTop: '60px',
+    //     padding: '20px',
+    //     position: 'relative',
+    //     // paddingTop: 60,
+    //     // paddingLeft: 20,
+    //     // minHeight: 'calc(100vh - 50px)',
+    //     // backgroundColor: 'transparent'
+    // },
     typoHeader: {
         marginTop: 0,
         marginBottom: "10px",
@@ -159,7 +159,7 @@ const aboutStyles = makeStyles(theme => ({
     aImgWrapper: {
         flex: 2,
         display: 'grid',
-        justifyItems: 'center'
+        justifyItems: 'center',
         // backgroundColor: 'grey'
     },
     aDetails: {

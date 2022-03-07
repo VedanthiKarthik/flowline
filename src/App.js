@@ -40,13 +40,14 @@ function App() {
               <Nav />
               <ProductsAndServices />
               <About />
-              <FinalComponent />
+            
             </Route>
             <Route exact path='/products&servies'><TabComponent /></Route>
             {/* <Route exact path='/services'><ServiceDetails /></Route> */}
           </Switch>
         </Router>
         {/* <Footer/> */}
+          <FinalComponent />
       </StyledEngineProvider>
     </div >
   );

@@ -5,23 +5,23 @@ import clientLogos from '../../images/clientLogo'
 import wave from '../../images/wave.png'
 import aboutUsImg from '../../images/compressors/C4.jpg'
 import Clients from './Clients'
-
+import '../../styles/about.css'
 
 const About = () => {
     console.log(clientLogos.map(({ name, url }, index) => url))
     const classes = aboutStyles()
 
     return (
-        <div id='about' className={classes.aboutWrapper}>
+        <div id='about' className='about-wrapper'>
             {/* <img src={wave} alt='wave' className={classes.wave} /> */}
 
             <div className={classes.aBody}>
-                <div className={classes.aImgWrapper}>
-                    <img src={aboutUsImg} alt='abtImg' />
+                <div className='about-img-wrapper'>
+                    <img src={aboutUsImg} alt='abtImg' className='about-img'/>
                     <Clients />
                 </div>
                 <div className={classes.aDetailsText}>
-                    <h1 className={classes.typoHeader}>
+                    <h1 className='about-title'>
                         About Us
                     </h1>
                     <div className={classes.aDetails}>
@@ -62,3 +62,4 @@ const About = () => {
 }
 
 export default About
+        

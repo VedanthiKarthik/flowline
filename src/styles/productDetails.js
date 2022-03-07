@@ -88,7 +88,7 @@ const prodDetails = makeStyles(theme => ({
     //     objectFit: 'cover'
     // },
     pdescription: {
-        color: 'black',
+        // color: 'black',
         padding: '10px 20px',
         fontSize: '16px'
     },
