@@ -13,7 +13,8 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(100, 0, 0, 0.33);
+    /* background-color: rgba(100, 0, 0, 0.33); */
+    background-color: var(--color-bg-transparent);
     left: 0;
     top: 0;
 }
@@ -44,21 +45,21 @@
 }
 
 .mail-icon, .tel-icon, .address-icon{
-    background-color: #db261d;
+    background-color: var(--color-primary);
     display: flex;
     justify-content: center;
     border-radius: 50%;
     align-items: center;
     width: 2em;
     height: 2em;
-    box-shadow: 4px 2px 7px 0 rgb(0 0 0 / 90%), -3px -2px 7px 0 rgb(255 0 0 / 70%)
+    box-shadow: 4px 2px 7px 0 var(--color-bg), -3px -2px 7px 0 var(--color-primary)
 
     /* flex: 1; */
 }
 
 .tel-text, .address-text, .mail-text{
     font-size: 14px;
-    color:white;
+    color:var(--color-neutral);
     margin-left: 12px;
     flex: 11;
 }
@@ -69,25 +70,27 @@
     margin-bottom: 35px;
 }
 h3{
-    color: #db261d;
+    color: var(--color-primary);
     margin: 20px 0px;
-    border-bottom: 1px solid #db261d;
+    border-bottom: 1px solid var(--color-primary);
 }
 .address p{
-    color: lightcoral ;
+    /* color: lightcoral ; */
+    color:var(--color-neutral)
 }
 
 .detail{
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 14px;
-    color:white;
+    color:var(--color-neutral);
     margin-bottom: 35px;
 }
 
 .detail span{
     margin-left: 5px;
     font-weight: normal;
-    color: lightcoral;
+    /* color: lightcoral; */
+    color: var(--color-neutral);
 }
 
 .follow-us-icon-wrapper{
@@ -103,12 +106,12 @@ h3{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: #db261d;
+    background-color: var(--color-primary);
     /* border: 1px solid rgba(10, 10, 10, 0.5); */
     width: 3em;
     height: 3em;
     justify-self: center;
-    box-shadow: 3px 2px 7px 0 rgb(0 0 0/90%), -2px -1px 7px 0 rgb(255, 0, 0);
+    box-shadow: 3px 2px 7px 0 var(--color-bg), -2px -1px 7px 0 var(--color-primary);
 
 }
 

@@ -5,8 +5,9 @@ const useStyles = makeStyles((theme) => ({
     homeWrapper: {
         height: '100%',
         maxWidth: '100vw',
-        overflow: 'hidden'
-        // backgroundColor: 'transpatent'
+        overflow: 'hidden',
+        backgroundColor: 'var(--color-bg)',
+        color: 'var(--color-text)',
     },
     description: {
         justifyContent: 'center',
@@ -32,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     },
     descWrapper1: {
         position: "absolute",
-        color: 'white',
+        color: 'var(--color-neutral) !important',
         left: '15%',
         top: '35%',
         zIndex: 10,

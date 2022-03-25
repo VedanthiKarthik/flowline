@@ -7,7 +7,8 @@ const navStyles = makeStyles({
     appbar: {
         padding: '6px 0px',
         height: '60px !important',
-        borderBottom: '1px solid #c74f4f'
+        borderBottom: '1px solid #c74f4f',
+        backgroundColor: 'var(--color-bg) !important',
 
     },
     toolBar: {
@@ -25,7 +26,8 @@ const navStyles = makeStyles({
     companyName: {
         fontSize: '20px',
         marginLeft: '45px',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        color: "var(--color-text)"
     },
     logo: {
         // background: 'white',
@@ -42,12 +44,13 @@ const navStyles = makeStyles({
         height: '30px !important',
         // backgroundImage: 'linear-gradient(to bottom right, #101012 30%, #1d1d21,#1e1e21) !important',
         fontWeight: '550',
-        color: "#db261d",
+        // color: "#db261d",
+        letterSpacing: '0.06em !important',
+        color: "var(--color-text) !important",
         // border: '1px solid white !important'
     },
     navbtnSelect: {
-        color: "black !important",
-        outline: '2px solid #db261d',
+        outline: '3px solid var(--color-primary) !important',
         backgroundImage: 'none !important'
     }
 })

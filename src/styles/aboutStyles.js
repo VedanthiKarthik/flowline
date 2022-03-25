@@ -135,7 +135,7 @@ const aboutStyles = makeStyles(theme => ({
         padding: 5,
         "& h3": {
             width: 'fit-content',
-            color: 'black',
+            color: 'var(--color-text)',
             borderBottom: '1px solid grey'
         },
         "& ul": {
@@ -160,6 +160,7 @@ const aboutStyles = makeStyles(theme => ({
         flex: 2,
         display: 'grid',
         justifyItems: 'center',
+        paddingLeft: 5
         // backgroundColor: 'grey'
     },
     aDetails: {

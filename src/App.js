@@ -18,6 +18,7 @@ import TabComponent from './components/Tab/Tab';
 import FinalComponent from './components/FinalComponent/FinalComponent'
 import CssBaseline from '@mui/material/CssBaseline';
 import { StyledEngineProvider } from '@mui/material/styles';
+import ToggleSvgImg from './components/toggleTheme/ToggleSvg';
 
 // import ScopedCssBaseline from '@mui/material/ScopedCssBaseline';
 
@@ -25,13 +26,14 @@ import { StyledEngineProvider } from '@mui/material/styles';
 // const ProductsAndServices = React.lazy(() => import('./components/ProductAndServices/ProductsAndServices'));
 
 
-function App() {
+function App () {
   return (
     <div className="App">
 
       {/* <div className='bgcover'></div> */}
       <StyledEngineProvider injectFirst>
         <CssBaseline />
+        <ToggleSvgImg />
         <Router>
           {/* <Nav /> */}
           <Switch>
@@ -40,14 +42,14 @@ function App() {
               <Nav />
               <ProductsAndServices />
               <About />
-            
+
             </Route>
             <Route exact path='/products&servies'><TabComponent /></Route>
             {/* <Route exact path='/services'><ServiceDetails /></Route> */}
           </Switch>
         </Router>
         {/* <Footer/> */}
-          <FinalComponent />
+        <FinalComponent />
       </StyledEngineProvider>
     </div >
   );

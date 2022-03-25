@@ -5,7 +5,9 @@ const pAnds = makeStyles(theme => ({
     pAndsWrapper: {
         padding: '0 5px 0px 5px',
         // minHeight: 'calc(100vh - 60px)',
-        backgroundColor: 'rgb(230,230,230)',
+        // backgroundColor: 'rgb(230,230,230)',
+        backgroundColor: 'var(--color-bg-offset)'
+
 
     },
     psContainer: {
@@ -20,7 +22,7 @@ const pAnds = makeStyles(theme => ({
         // -backgroundSize: 'cover',
         flexBasis: '280px',
         alignItems: 'center',
-        backgroundColor: 'white',
+        backgroundColor: 'var(--color-bg)',
         borderRadius: '5px',
         padding: '8px',
         outline: '1px solid grey',
@@ -33,7 +35,7 @@ const pAnds = makeStyles(theme => ({
         transitionDuration: '300ms !important',
         transition: 'all 300ms ease-out !important',
         '&:hover': {
-            boxShadow: 'rgba(0,0,0,0.77) 0px 3px 20px',
+            boxShadow: 'var(--color-bg) 0px 3px 20px',
             transform: 'scale(1.01) !important',
             // outline: '2px solid  rgba(64,0,0,0.8784313725490196)'
         }
@@ -41,10 +43,10 @@ const pAnds = makeStyles(theme => ({
     pContainer: {
         width: '100%',
         height: '100%',
-        outline: '1px solid #db261d',
-
+        outline: '1px solid var(--color-primary)',
+        color: 'var(--color-text)',
         '&:hover': {
-            outline: '2px solid #db261d'
+            outline: '2px solid var(--color-primary)'
         }
         // display: 'grid',
         // backgroundImage: 'linear-gradient(to bottom right, white, black)',
@@ -160,7 +162,7 @@ const pAnds = makeStyles(theme => ({
     },
     round: {
         position: 'relative',
-        border: '3px solid #000',
+        border: '3px solid var(--color-primary)',
         width: '70px',
         height: '70px',
         borderRadius: '100%',
@@ -171,7 +173,7 @@ const pAnds = makeStyles(theme => ({
         height: '3px',
         margin: '1px',
         width: '28px',
-        background: '#000',
+        background: 'var(--color-primary)',
         transition: '0.4s ease'
     },
 

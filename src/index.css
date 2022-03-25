@@ -1,3 +1,54 @@
+#root {
+  height: max-content;
+  max-width: 100vw;
+}
+
+:root{
+  --color-bg: #222222;
+  --color-bg-offset: #404040;
+  --color-text: #ffffff;
+  --color-text-offset: #818a91;
+  --color-neutral:#ffffff;
+  /* --color-border: #A814B1; */
+  --color-primary: #db261d;
+  --color-primary-offset: #a730be;
+  --color-secondary: #D078E3;
+  --color-bg-transparent:#40404040;
+  --color-shadow-left:#858585;
+}
+
+html[data-theme = "dark"] {
+  --color-bg: #222222;
+  --color-bg-offset: #404040;
+  --color-text: #ffffff;
+  --color-text-offset: #818a91;
+  /* --color-border: #A814B1; */
+  
+  --color-primary-offset: #a730be;
+  --color-secondary: #D078E3;
+ }
+
+
+ html[data-theme ="light"] {
+  --color-bg: #fff;
+  --color-bg-offset: #f2f2f2;
+  --color-text: #000000;
+  --color-text-offset: #0000008a;
+  --color-border: #6A69DF;
+  --color-bg-transparent: rgba(100, 0, 0, 0.33);
+  /* --color-primary: #671B99;
+  --color-primary-offset: rgba(128, 78, 194, 0.61); */
+  /* --color-secondary: #7B88E9; */
+  --color-secondary : #b368e6;
+}
+
+
+*{
+  transition: color var(--fast), background-color var(--fast);
+}
+
+
+
 body {
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -5,7 +56,8 @@ body {
   /* font-family: 'Montserrat', sans-serif;*/
   /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Roboto Condensed', sans-serif !important; */
-
+letter-spacing: 0.06em !important;
+background-color: var(--color-bg);
   font-family: 'Montserrat', sans-serif !important;
   font-family: 'Oswald', sans-serif !important;
   font-family: 'Roboto Condensed', sans-serif !important;
@@ -48,10 +100,10 @@ p{
 }
 
 
-:root {
+/* :root {
   --primary-color: #005fff;
   --primary-color-alpha: #005fff1a;
-}
+} */
 
 html,
 body {
@@ -61,10 +113,6 @@ body {
   
 }
 
-#root {
-  height: max-content;
-  max-width: 100vw;
-}
 
 a{
   text-decoration:none

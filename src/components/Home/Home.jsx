@@ -12,7 +12,7 @@ const Home = () => {
         <div id='home' className={classes.homeWrapper}>
             {/* <Nav /> */}
             <MyCarousal />
-            <div className={classes.descWrapper1}>
+            <div className='typer'>
                 <TyperText />
             </div>            <div className={classes.description}>
                 <p ><i>{`In today’s fiercely competitive markets; A customer needs instant access to wide ranging business
