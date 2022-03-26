@@ -15,6 +15,9 @@
   --color-secondary: #D078E3;
   --color-bg-transparent:#40404040;
   --color-shadow-left:#858585;
+  --fast:0.4s;
+  --medium:1.5s;
+  --slow:2.5s;
 }
 
 html[data-theme = "dark"] {

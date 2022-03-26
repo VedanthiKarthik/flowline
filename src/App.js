@@ -29,12 +29,12 @@ import ToggleSvgImg from './components/toggleTheme/ToggleSvg';
 function App () {
   return (
     <div className="App">
-
+      <ToggleSvgImg />
       {/* <div className='bgcover'></div> */}
       <StyledEngineProvider injectFirst>
         <CssBaseline />
-        <ToggleSvgImg />
         <Router>
+
           {/* <Nav /> */}
           <Switch>
             <Route exact path="/" >
@@ -49,6 +49,7 @@ function App () {
           </Switch>
         </Router>
         {/* <Footer/> */}
+
         <FinalComponent />
       </StyledEngineProvider>
     </div >

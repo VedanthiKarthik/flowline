@@ -7,7 +7,7 @@ function setTheme (loading) {
         !loading && changeThemeToDark()
         loading && changeThemeToChoco()
     }
-    else if (theme === 'dark') {
+    else {
         !loading && changeThemeToChoco()
         loading && changeThemeToDark()
 

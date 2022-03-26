@@ -4,12 +4,12 @@
     flex-wrap: wrap;
     /* display: grid;
     grid-template-columns: 3fr 4fr 2fr; */
-    min-height: 350px;
+    min-height: 325px;
     background-image: url(../images/footer-background.jpg);
     background-size: cover;
 }
 .foot-wrapper::before{
-    content: "";
+    content: "|";
     position: absolute;
     width: 100%;
     height: 100%;
@@ -67,7 +67,7 @@
 .contact-mail, .contact-tel, .contact-address{
     display: flex;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 h3{
     color: var(--color-primary);
@@ -83,7 +83,7 @@ h3{
     /* font-weight: bold; */
     font-size: 14px;
     color:var(--color-neutral);
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .detail span{

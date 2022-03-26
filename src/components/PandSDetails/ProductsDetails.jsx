@@ -19,38 +19,38 @@ const ProductsDetails = () => {
 
                         <ul>
                             {data.description !== undefined ?
-                                <li className={classes.pdescription}>
+                                <li className="p-description">
                                     {data.description}
                                 </li> : null}
 
                             {data.Filters !== undefined ?
-                                <li className={classes.pdescription}>
+                                <li className="p-description">
                                     {data.Filters}
                                 </li> : null}
 
                             {data.Softener !== undefined ?
-                                <li className={classes.pdescription}>
+                                <li className="p-description">
                                     {data.Softener}
                                 </li> : null}
 
                             {data.ROPlant !== undefined ?
-                                <li className={classes.pdescription}>
+                                <li className="p-description">
                                     {data.ROPlant}
                                 </li> : ''}
 
                             {data.DMMBPlants !== undefined ?
-                                <li className={classes.pdescription}>
+                                <li className="p-description">
                                     {data.DMMBPlants}
                                 </li> : ''}
 
                             {data.FilterSoftener !== undefined ?
-                                <li className={classes.pdescription}>
+                                <li className="p-description">
                                     {data.FilterSoftener}
                                 </li> : ''}
 
 
                             {data.d0 !== undefined ?
-                                <li className={classes.pdescription}>
+                                <li className="p-description">
                                     {data.d0}
                                     <ul>
                                         <li>{data.l1}</li>
@@ -61,7 +61,7 @@ const ProductsDetails = () => {
                                 </li> : ''}
 
                             {data.cdescription !== undefined ?
-                                <li className={classes.pdescription}>
+                                <li className="p-description">
                                     {data.cdescription}
                                     <ul>
                                         <li>{data.c1}</li>
@@ -92,31 +92,31 @@ const ProductsDetails = () => {
         //                 <div className={classes.pTitle}>{data.title}</div>
         //                 <ul>
         //                     {data.description !== undefined ?
-        //                         <li className={classes.pdescription}>
+        //                         <li className={classes.p-description}>
         //                             {data.description}
         //                         </li> : null}
         //                     {data.Filters !== undefined ?
-        //                         <li className={classes.pdescription}>
+        //                         <li className={classes.p-description}>
         //                             {data.Filters}
         //                         </li> : null}
         //                     {data.Softener !== undefined ?
-        //                         <li className={classes.pdescription}>
+        //                         <li className={classes.p-description}>
         //                             {data.Softener}
         //                         </li> : <></>}
         //                     {data.ROPlant !== undefined ?
-        //                         <li className={classes.pdescription}>
+        //                         <li className={classes.p-description}>
         //                             {data.ROPlant}
         //                         </li> : ''}
         //                     {data.DMMBPlants !== undefined ?
-        //                         <li className={classes.pdescription}>
+        //                         <li className={classes.p-description}>
         //                             {data.DMMBPlants}
         //                         </li> : ''}
         //                     {data.FilterSoftener !== undefined ?
-        //                         <li className={classes.pdescription}>
+        //                         <li className={classes.p-description}>
         //                             {data.FilterSoftener}
         //                         </li> : ''}
         //                     {data.d0 !== undefined ?
-        //                         <li className={classes.pdescription}>
+        //                         <li className={classes.p-description}>
         //                             {data.d0}
         //                             <ul>
         //                                 <li>{data.l1}</li>
@@ -126,11 +126,11 @@ const ProductsDetails = () => {
         //                             </ul>
         //                         </li> : ''}
         //                     {/* {data.d1 !== undefined ?
-        //                         <li className={classes.pdescription}>
+        //                         <li className={classes.p-description}>
         //                             {data.d1}
         //                         </li> : ''} */}
         //                     {data.cdescription !== undefined ?
-        //                         <li className={classes.pdescription}>
+        //                         <li className={classes.p-description}>
         //                             {data.cdescription}
         //                             <ul>
         //                                 <li>{data.c1}</li>

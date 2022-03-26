@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         width: '80%',
         margin: '25px auto',
         textAlign: 'center',
-        fontSize: '16px',
+        fontSize: '14px',
         padding: 8,
     },
     // desc2: {

@@ -28,7 +28,7 @@ const pAnds = makeStyles(theme => ({
         outline: '1px solid grey',
         // flex: '1',
         // width: '300px',
-        height: '400px',
+        height: '410px',
         margin: '20px',
         overflow: 'hidden',
         position: 'relative',
@@ -83,7 +83,7 @@ const pAnds = makeStyles(theme => ({
         fontWeight: 'bold'
     },
     description: {
-        fontSize: '16px',
+        fontSize: '14px',
         whiteSpace: 'pre-line'
     },
     // imgWrapper: {

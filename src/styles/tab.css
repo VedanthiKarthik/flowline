@@ -1,13 +1,13 @@
 .tab-wrapper{
     /* background-color: rgb(230,230,230); */
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-offset);
 
     /* background-color: rgba(250, 178, 178, 0.76); */
 }
 
 .selected-tab{
     color: var(--color-primary) !important;
-    background-color: transparent !important ;
+    background-color: var(--color-bg-offset) !important ;
 }
 
 .product-tab, .service-tab{

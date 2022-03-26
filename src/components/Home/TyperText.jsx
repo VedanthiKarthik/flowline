@@ -111,7 +111,7 @@ const TyperText = () => {
     // var completeText = <h5>{textHeader} {typingText}</h5>
 
     return (
-        <p className={classes.cursor}>{typingText}</p>
+        <p className='cursor'>{typingText}</p>
 
         // <div ref={alltexts}>
         //     <span className={classes.text}>FrontEnd Developer</span>

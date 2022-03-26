@@ -1,5 +1,5 @@
 .App{
-    /* position: relative; */
+    position: relative;
     object-fit:scale-down;
     /* height: max-content; */
     height: max-content;
@@ -21,7 +21,36 @@
     position: absolute;
     color: var(--color-neutral) !important;
     left: 15%;
-    top: 5%;
+    top: 35%;
     z-index: 10;
-
 }
+
+
+.cursor{
+    font-size: 40px;
+    position: relative;
+}
+
+.cursor::after{
+    content: '|';
+    margin: auto;
+    position: 'absolute';
+    width: '3px';
+    /* height: '100%'; */
+    color: red;
+    animation: cursor-animation 0.8s step-end infinite
+}
+
+
+@keyframes cursor-animation{
+    0%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
