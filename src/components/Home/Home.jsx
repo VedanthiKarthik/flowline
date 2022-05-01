@@ -1,20 +1,20 @@
 import React from 'react'
 
-import useStyles from '../../styles/homeStyle'
 import MyCarousal from './Carousal'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import TyperText from './TyperText';
 import Nav from '../Nav/Nav';
+import '../../styles/home.css'
+
 const Home = () => {
 
-    const classes = useStyles()
     return (
-        <div id='home' className={classes.homeWrapper}>
-            {/* <Nav /> */}
+        <div id='home' className="home-wrapper">
             <MyCarousal />
             <div className='typer'>
                 <TyperText />
-            </div>            <div className={classes.description}>
+            </div>
+            <div className="description">
                 <p ><i>{`In today’s fiercely competitive markets; A customer needs instant access to wide ranging business
                         solutions and also needs support that is fast and close at hand.`}</i>
                 </p>

@@ -1,89 +1,121 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-// import IconButton from '@mui/material/IconButton';
-// import Typography from '@mui/material/Typography';
-// import Menu from '@mui/material/Menu';
-// import MenuIcon from '@mui/icons-material/Menu';
-// import Container from '@mui/material/Container';
-// import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-// import Tooltip from '@mui/material/Tooltip';
-// import MenuItem from '@mui/material/MenuItem';
-
-import navStyles from '../../styles/navStyles'
-// import { Link } from 'react-router-dom';
 import Contact from '../Contact/Contact';
-// import { Dialog, DialogTitle } from '@material-ui/core';
-
 import Logo from '../../images/logo1.png'
+import '../../styles/nav.css'
+import MenuIcon from '@mui/icons-material/Menu';
+import { Divider, Drawer, List, ListItem, ListItemText } from '@mui/material';
+
+
+
 
 const pages = [
     {
         "page": "Home",
-        // "link": "/",
         'id': '#home'
     },
     {
         "page": "Products and Services",
-        // "link": "/products",
         'id': '#products'
     },
     {
         "page": "About",
-        // "link": "/about",
         'id': '#about'
     }]
-// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
-const Nav = () => {
-
-    const classes = navStyles()
-
+const Nav = (props) => {
     const [selectedPage, setSelectedPage] = React.useState(0)
     const [dialogisOpen, setDialog] = React.useState(false)
     const [location, setLocation] = React.useState('#home')
+    const [mobileOpen, setMobileOpen] = React.useState(false);
+    const drawerWidth = 240;
 
     const handleClick = (index, id) => {
         setSelectedPage(index);
-
         setLocation(id)
-        // window.location.href = location
-        // console.log(id, window.location.href)
     }
 
+    const handleDrawerToggle = () => {
+        setMobileOpen(!mobileOpen);
+    };
+
+    useEffect(() => {
+        window.location.href = location
+    }, [location])
+
+
+    const drawer = (
+        <div>
+            {/* <Toolbar sx={{ position: 'relative', marginBottom: "15px" }}>
+                <div className="logo-wrapper">
+                    <img src={Logo} alt='Flowline-logo' className="logo-img" />
+                    <div className="company-name">FLOWLINE</div>
+                </div></Toolbar>
+            <Divider sx={{ borderColor: "var(--color-text)" }} /> */}
+            <List sx={{ paddingTop: "30%" }}>
+                {pages.map(({ page, id }, index) => (
+                    <ListItem button key={index} onClick={() => {
+                        handleClick(index, id);
+                        handleDrawerToggle()
+                    }}>
+                        <ListItemText primary={page} />
+                    </ListItem>
+                ))}
+            </List>
+        </div>
+    );
     return (
-        // <div className={classes.navWrapper}>
-        <AppBar position='sticky' className={classes.appbar}>
-            <Toolbar variant="dense">
-                <div className={classes.logoWrapper}>
-                    <img src={Logo} alt='' className={classes.logo} />
-                    <div className={classes.companyName}>FLOWLINE</div>
+        <AppBar position='sticky' className="appbar">
+            <Toolbar variant="dense" sx={{ position: "relative" }}>
+                <div className="logo-wrapper">
+                    <img src={Logo} alt='Flowline-logo' className="logo-img" />
+                    <div className="company-name">FLOWLINE</div>
                 </div>
-                <Box sx={{ display: { xs: 'flex' } }}>
+                <Box sx={{ display: { xs: 'flex' } }} id="myTopnav">
                     {pages.map((page, index) => (
-                        // <Link key={page.page} to={page.link} style={{ textDecoration: "none" }}>
                         <Button
                             key={index}
-                            className={`${classes.navbtn}  ${location === page.id ? classes.navbtnSelect : ''}`}
-                            // onClick={() => }
-                            onClick={() => { handleClick(index, page.id); window.location.href = page.id }}
+                            className={"nav-button " + (location === page.id ? "selected" : '')}
+                            onClick={() => { handleClick(index, page.id); }}
                         >
                             {page.page}
                         </Button>
-
-                        // </Link>
                     ))}
                     <Button
-                        className={classes.navbtn}
+                        className="nav-button"
                         onClick={() => setDialog(true)}
                     >Contact</Button>
+                    <MenuIcon fontSize='large' className="icon" onClick={handleDrawerToggle} />
                 </Box>
                 <Contact isOpen={dialogisOpen} setDialog={setDialog} />
+
+
+                <Box
+                    component="nav"
+                    aria-label="sm-nav-drawer"
+                >
+                    <Drawer
+                        variant="temporary"
+                        anchor="right"
+                        open={mobileOpen}
+                        onClose={handleDrawerToggle}
+                        ModalProps={{
+                            keepMounted: true, // Better open performance on mobile.
+                        }}
+                        sx={{
+                            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+                        }}
+                        className="drawer"
+                    >
+                        {drawer}
+                    </Drawer>
+
+                </Box>
             </Toolbar>
         </AppBar>
-        // </div>
     )
 }
 

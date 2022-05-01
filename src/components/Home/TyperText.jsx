@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import typertext from '../../styles/typertext'
+
 import useTypewriter from "react-typewriter-hook";
 
 
@@ -11,7 +11,7 @@ const TyperText = () => {
     
     
     
-        // useEffect(() => {
+        // useEffect(() => {    
         //     console.log("use-" + 1)
         //     const texts = alltexts.current.children
         //     setPrevtext(texts[1])
@@ -72,7 +72,7 @@ const TyperText = () => {
         
         // console.log("component")
         */
-    const classes = typertext()
+
     const Texts = [
         'Vision: INDUSTRY LEADERS IN UTILITY MANAGEMENT',
         'Mission: EXCELLENCE THROUGH CUSTOMER FOCUS'
@@ -101,7 +101,7 @@ const TyperText = () => {
                 setText(Texts[index]);
                 // setTextHeader(TextsHeader[index])
             }, 5000);
-            return function clear() {
+            return function clear () {
                 clearInterval(intervalRef.current);
             };
         },

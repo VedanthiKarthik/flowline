@@ -1,12 +1,12 @@
 import React from 'react'
-import prodDetails from '../../styles/productDetails'
+// import prodDetails from '../../styles/productDetails'
 import ps from '../../images/p&sImg'
 import '../../styles/productDetails.css'
 
 
 const ServiceDetails = () => {
 
-    const classes = prodDetails()
+    // const classes = prodDetails()
     let i = 0
     return (
         <div className='p-s-wrapper'>
