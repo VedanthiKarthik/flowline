@@ -7,11 +7,17 @@
     position: relative;
 }
 
-.description{
+.description {
     justify-content: 'center';
     width: 80%;
     margin: 25px auto;
     text-align: center;
     font-size: 14px;
     padding: 8;
+}
+
+@media screen and (max-width: 480px) {
+    .home-wrapper {
+        max-height: 60vh;
+    }
 }

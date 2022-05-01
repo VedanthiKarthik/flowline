@@ -78,3 +78,12 @@
         width: 500px
     }
 }
+
+
+@media screen and (max-width:530px) {
+    .about-img {
+        width: 100%;
+    }
+
+
+}
